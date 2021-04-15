@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>WORKSOUT</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- ViewPort -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--AJAX-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="worksout.css">
+    
+</head>
+
+
+<body>
+    <!--Header-->
+    <section id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3 menuBtn">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" id="headerBtn" onclick="menu_pc_open()"></span>
+
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" id="headerBtnPhone" onclick="menu_mobile_open()"></span>
+                </div>
+
+                <div class="col-xs-6">
+                    <a href="" id="logo">WORKSOUT</a>
+                </div>
+
+                <div class="col-xs-3">
+                    <span class="headUserMenu">SEARCH</span>
+                    <span class="headUserMenu">HELP</span>
+                    <span class="headUserMenu">LOGIN</span>
+                    <span class="headUserMenu">CART(0)</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Control header and content-->
+    <section id="control"></section>
+
+    <!--navigation menu-->
+    <section id="navCon">
+        <ul>
+            <a href="">
+                <li>ONLINE SHOP</li>
+            </a>
+            <a href="">
+                <li>STORE INFO</li>
+            </a>
+            <a href="">
+                <li>NEWS</li>
+            </a>
+            <a href="">
+                <li>LOOKBOOK</li>
+            </a>
+            <a href="">
+                <li>RAFFLE</li>
+            </a>
+        </ul>
+    </section>
+
+    <!--new Arrival_main-->
+    <section id="newArrival_3">
+        <div class="container mainContent">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="imgBox">
+                        <img src="images/newArrival_1.jpg" class="img">
+                    </div>
+                    <p class="infoTitle newArrTitle">ASICS KIKO KOSTADINOV STUDIO</p>
+                    <p class="infoType">NEW ARRIVALS</p>
+                    <p class="infoType">키코 스타디노브 스튜디오에서 큐레이션하고 아식스 스포츠 스타일 팀에서 제작한 스니커즈 컬렉션을 발매합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--new Arrival_2-->
+    <section id="newArrival_2">
+        <div class="container mainContent">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="imgBox">
+                        <img src="images/newArrival_2.jpg" class="img">
+                    </div>
+                    <p class="infoTitle newArrTitle">ASICS KIKO KOSTADINOV STUDIO</p>
+                    <p class="infoType">NEW ARRIVALS</p>
+                    <p class="infoType">키코 스타디노브 스튜디오에서 큐레이션하고 아식스 스포츠 스타일 팀에서 제작한 스니커즈 컬렉션을 발매합니다.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="imgBox">
+
+                        <img src="images/newArrival_3.jpg" class="img">
+                    </div>
+                    <p class="infoTitle newArrTitle">OBEY KOREA SNAP - TAKEWAY</p>
+                    <p class="infoType">NEW ARRIVALS</p>
+                    <p class="infoType">오베이 코리아의 두번째 스냅화보를 공개합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Feature-->
+    <section id="feature">
+        <div class="container mainContent">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row featureList">
+                        <div class="col-xs-6 col-sm-12">
+                            <div class="imgBox"><img src="images/feature1.jpg" class="img"></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12">
+                            <p class="infoType">FEATURE</p>
+                            <p class="infoTitle">VANS BY WORKSOUT WITH RYSE HOTEL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="row featureList">
+                        <div class="col-xs-6 col-sm-12">
+                            <div class="imgBox"><img src="images/feature2.jpg" class="img"></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12">
+                            <p class="infoType">FEATURE</p>
+                            <p class="infoTitle">OBEY KOREA NEW SNAP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="row featureList">
+                        <div class="col-xs-6 col-sm-12">
+                            <div class="imgBox"><img src="images/feature3.jpg" class="img"></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12">
+                            <p class="infoType">FEATURE</p>
+                            <p class="infoTitle">VAULT BY VANS X WACKOMARIA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--link-->
+    <section id="shopLink">
+        <div class="container mainContent">
+            <div class="row">
+                <div class="col-sm-8 shopLink">
+                    <div class="imgBox"><img src="images/shopLink_1.jpg" class="img">
+
+                        <div class="linkBox">
+                            <a href="" class="shopLinkBtn">SHOP F-LAGSTUF-F</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 shopLink">
+                    <div class="imgBox"><img src="images/shopLink_2.jpg" class="img">
+                        <div class="linkBox">
+                            <a href="" class="shopLinkBtn">SHOP ARIES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--lookbook-->
+    <section id="lookbook">
+        <div class="container mainContent">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="imgBox">
+                        <img src="images/lookbook_0.jpg" class="img">
+                    </div>
+                    <p class="infoTitle">MAGLIANO SS 21 LOOKBOOK</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-xs-6 look">
+                            <div class="imgBox">
+                                <img src="images/lookbook_1.jpg" class="img">
+                            </div>
+                            <p class="infoTitle">KILLING SHOT</p>
+                            <p class="infoType">SNAPSHOT</p>
+                        </div>
+                        <div class="col-xs-6 look">
+                            <div class="imgBox">
+                                <img src="images/lookbook_2.jpg" class="img">
+
+                            </div>
+                            <p class="infoTitle">GOODMAN</p>
+                            <p class="infoType">SNAPSHOT</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6 look">
+                            <div class="imgBox">
+                                <img src="images/lookbook_3.jpg" class="img">
+
+                            </div>
+                            <p class="infoTitle">LIVE YOUR LIFE</p>
+                            <p class="infoType">SNAPSHOT</p>
+                        </div>
+                        <div class="col-xs-6 look">
+                            <div class="imgBox">
+                                <img src="images/lookbook_4.jpg" class="img">
+
+                            </div>
+                            <p class="infoTitle">AIN’T SHE COOL</p>
+                            <p class="infoType">SNAPSHOT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sitemap-->
+    <section id="sitemap">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3">
+                    <ul>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CUSTOMER CARE</a></li>
+                        <li><a href="">WORK WITH US</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-4 col-xs-offset-5">
+                    <ul style="text-align: right;">
+                        <li><a href="">WORKSOUT BLOG</a></li>
+                        <li><a href="">WORKSOUT POST</a></li>
+                        <li><a href="">WORKSOUT FACEBOOK</a></li>
+                        <li><a href="">WORKSOUT INSTAGRAM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>© 2003-2019 WORKSOUT Inc.
+                    </p>
+                </div>
+
+                <div class="col-sm-6">
+                    <p>상호명: (주)웍스아웃 | 주소: 서울시 마포구 월드컵북로23길 24 | 전자우편주소: customer@worksout.co.kr | 사업자등록번호: 106-86-85373 | 통신판매업신고: 2014-서울마포-0219 | 호스팅사업자: (주)오라클 | 대표: 강승혁, 박선영 | 전화: 02-541-0854 | <span><a href="">개인정보취급방침</a> | <a href="">이용약관</a></span></p>
+                </div>
+
+                <div class="col-sm-3">
+                    <p>
+                        구매안전 (에스크로) 서비스 가입사실 확인</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PC menu-->
+    <section id="menu_pc">
+        <ul>
+            <li>ONLINE SHOP</li>
+            <li>STORE INFO</li>
+            <li>NEWS</li>
+            <li>LOOKBOOK</li>
+            <li>ABOUT</li>
+            <li>CUSTOMER CARE</li>
+            <li>RAFFLE</li>
+        </ul>
+    </section>
+
+    <!--MOBILE menu-->
+    <section id="menu_phone">
+        <ul id="userMenu">
+            <li onclick="search_open()" id="searchBtn">SEARCH</li>
+            <li><input type="text" placeholder="Search.." id="searchBox"></li>
+            <li>HELP</li>
+            <li>LOG-IN</li>
+            <li>CART</li>
+        </ul>
+
+        <ul>
+            <li>ONLINE SHOP</li>
+            <li>STORE INFO</li>
+            <li>NEWS</li>
+            <li>LOOKBOOK</li>
+            <li>ABOUT</li>
+            <li>CUSTOMER CARE</li>
+            <li>RAFFLE</li>
+        </ul>
+    </section>
+    <section id="mobile_menu_screen" onclick="mobile_close()"></section>
+
+<script type="text/javascript" src="/worksout.js"></script>
+</body>
+
+</html>
