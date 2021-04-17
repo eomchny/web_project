@@ -151,7 +151,7 @@ p {
 
 @media (max-width:768px) {
     #title2 {
-        font-size: 400%;
+        font-size: 350%;
     }
 }
 
@@ -174,7 +174,7 @@ p {
 @media (max-width:768px) {
     #title3 {
         text-align: right;
-        font-size: 400%;
+        font-size: 350%;
     }
 }
 
