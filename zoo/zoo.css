@@ -1,0 +1,374 @@
+/*Base*/
+section {
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.infoBox {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+p {
+    margin: 0px;
+}
+
+
+/*background Image*/
+#background {
+    height: 100%;
+    position: fixed;
+    background-image: url(jr-towers-164168%202.jpg);
+    width: 100%;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+/*header*/
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+    transition: 0.5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.headerLogo a {
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.headerLogo a:hover {
+    text-decoration: none;
+}
+
+#headerMenuBtn {
+    position: relative;
+    top: 6px;
+    color: white;
+    font-size: 170%;
+}
+
+/*Brand Logo*/
+.brandLogoRow {
+    padding-top: 30%;
+    padding-bottom: 40%;
+}
+
+#brandLogoTop {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    transition: 2s;
+    opacity: 0;
+}
+
+#brandLogoTop span {
+    font-size: 200%;
+}
+
+#title0 {
+    color: white;
+    text-align: left;
+    font-size: 700%;
+    letter-spacing: 3px;
+    opacity: 0.23;
+    padding-left: 5%;
+}
+
+@media (max-width:768px) {
+    #title0 {
+        font-size: 400%;
+    }
+}
+
+/*message*/
+.introRow {
+    color: #d8d8d8;
+    margin-bottom: 220px;
+}
+
+#introLogo {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 160%;
+}
+
+#introDetail {
+    font-size: 90%;
+}
+
+#title1 {
+    color: white;
+    text-align: right;
+    font-size: 700%;
+    letter-spacing: 3px;
+    opacity: 0.23;
+    padding-right: 5%;
+}
+
+@media (max-width:768px) {
+    #title1 {
+        font-size: 400%;
+    }
+}
+
+
+/*Program*/
+.programRow,
+.programRow2 {
+    color: #d8d8d8;
+    font-size: 90%;
+}
+
+.programRow2 {
+    margin-bottom: 210px;
+}
+
+#title2 {
+    color: white;
+    text-align: left;
+    font-size: 700%;
+    letter-spacing: 3px;
+    opacity: 0.23;
+    padding-left: 5%;
+}
+
+@media (max-width:768px) {
+    #title2 {
+        font-size: 400%;
+    }
+}
+
+/*Organization*/
+.organizationRow {
+    color: #d8d8d8;
+    margin-bottom: 210px;
+    font-size: 90%;
+}
+
+#title3 {
+    color: white;
+    text-align: right;
+    font-size: 700%;
+    letter-spacing: 3px;
+    padding-right: 4%;
+    opacity: 0.23;
+}
+
+@media (max-width:768px) {
+    #title3 {
+        text-align: right;
+        font-size: 400%;
+    }
+}
+
+/*memberShip*/
+
+.memberRow {
+    color: #d8d8d8;
+    margin-bottom: 130px;
+    font-size: 90%;
+}
+
+.moreBtn {
+    color: white;
+    border: 2px solid white;
+    display: block;
+    width: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 40px;
+}
+
+.moreBtn:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/*Information*/
+#infoLogo,
+.infoSub {
+    text-align: center;
+}
+
+.infoSub {
+    margin-top: 10px
+}
+
+#infoLogo {
+    font-size: 180%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#contactLink {
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid gray;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+#contactLink:hover {
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+}
+
+
+/*Linklist*/
+.contactLinkRow {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contactLinkList {
+    color: white;
+    transition: 0.6s;
+    letter-spacing: 1px;
+}
+
+.contactLinkList:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width:768px) {
+
+    .contactLinkList {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 130%;
+    }
+
+}
+
+
+/*Social*/
+.socialRow {
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+}
+
+#socialLogo {
+    font-size: 200%;
+}
+
+#socialSub {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.socialIcon a {
+    font-size: 180%;
+    color: white;
+    transition: 0.3s;
+}
+
+.socialIcon a:hover {
+    opacity: 0.7;
+}
+
+
+/*bottom*/
+.copyrightRow {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.copryrightText {
+    font-size: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#topBtn {
+    font-size: 150%;
+    width: 150px;
+}
+
+
+/*Nav*/
+#nav {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 0%;
+    height: 100%;
+    padding-top: 100px;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.navRow {
+    color: white;
+}
+
+.navRow ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.navRow li {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 130%;
+}
+
+#navInfoLogo {
+    color: white;
+    font-size: 140%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#navInfoBtn {
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid gray;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+    display: block;
+    width: 60%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#navInfoBtn:hover {
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+}
