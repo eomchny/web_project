@@ -14,7 +14,7 @@
 
 #headerLogo {
     margin: 0px;
-    font-size: 120%;
+    font-size: 100%;
     color: white;
     font-weight: bold;
 }
@@ -42,7 +42,7 @@
     }
 
     #top {
-        margin-top: 42px;
+        margin-top: 25px;
     }
 }
 
