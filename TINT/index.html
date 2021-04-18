@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THIS IS NEVER THAT</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- ViewPort -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--AJAX-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    
+    <!--css-->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="middle.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+   <section id="header">
+       <div class="container">
+           <div class="row headerRow">
+               <div class="col-xs-8">
+                   <a href="" id="headerLogo">THIS IS NEVER THAT</a>
+               </div>
+               
+               <div class="col-xs-4 menuCol">
+                   <button id="navBtn" onclick="openNav()">MENU</button>
+               </div>
+           </div>
+       </div>
+   </section>
+   
+    <section id="top">
+        <div class="test" id="photo1" onmouseover="changeWidth(0)" onmouseout="returnWidth()">
+            <div class="black">
+                <p>OUR STORY</p>
+            </div>
+        </div>
+
+        <div class="test" id="photo2" onmouseover="changeWidth(1)" onmouseout="returnWidth()">
+            <div class="black">
+                <p>FLAGSHIP STORE</p>
+            </div>
+        </div>
+
+        <div class="test" id="photo3" onmouseover="changeWidth(2)" onmouseout="returnWidth()">
+            <div class="black">
+                <p>PRODUCT</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="border">border</div>
+
+    <section id="middle">
+        <div class="container">
+            <div class="row shopRow">
+                <div class="col-sm-4 col-sm-push-8">
+                    <p id="shopLogo">ONLINE SHOP</p>
+                </div>
+                <div class="col-sm-8 col-sm-pull-4 productLine">
+                    <div class="imgBox">
+                        <img class="img" src="images/redhat.jpg">
+                    </div>
+                    <div class="imgBox">
+                        <img class="img" src="images/outer1.jpg">
+                    </div>
+                    <div class="imgBox">
+                        <img class="img" src="images/acc1.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row shopRow">
+                <div class="col-sm-8 productLine">
+                    <div class="imgBox">
+                        <img class="img" src="images/top1.jpg">
+                    </div>
+                    <div class="imgBox">
+                        <img class="img" src="images/acc2.jpg">
+                    </div>
+                    <div class="imgBox">
+                        <img class="img" src="images/bottom1.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <a href="" id="moreBtn">MORE<br>
+                        <span>thisisneverthat.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p id="footerLogo">THIS IS NEVERTHAT</p>
+                </div>
+
+
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <p class="footerList">Company Profile</p>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3">
+                            <p class="footerList">Recurit</p>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3">
+                            <p class="footerList">Contact</p>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3">
+                            <p class="footerList">Pricavy Policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <p id="footerCopyright">©2021– Hosoo Co.,Ltd. all rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="navMenu">
+        <div class="container">
+            <div class="row">
+                <p><a href="" class="navMain">OUR STORY</a></p>
+        
+                <p><a href="" class="navSub">ABOUT THIS IS NEVERTHAT</a></p>
+                <p><a href="" class="navSub">LOOKBOOK</a></p>
+                <p><a href="" class="navSub">NOTICE</a></p>
+                
+                <p><a href="" class="navMain">FLAGSHIP STORE</a></p>
+                
+                <p><a href="" class="navSub">FLAGESHIP STORE MAPO</a></p>
+                <p><a href="" class="navSub">THE HYUNDAI STORE SEOUL</a></p>
+                <p><a href="" class="navSub">ONLINE STORE</a></p>
+                
+                <p><a href="" class="navMain">HELP</a></p>
+                
+                <p><a href="" class="navSub">Q&A</a></p>
+                <p><a href="" class="navSub">TERMS</a></p>
+                <p><a href="" class="navSub">PRIVACY POLICY</a></p>
+                <p><a href="" class="navSub">GUIDE</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="tint.js"></script>
+</body></html>

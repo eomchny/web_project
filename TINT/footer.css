@@ -1,0 +1,36 @@
+#footer {
+    background-color: #666667;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#footer p {
+    margin: 0px;
+}
+
+#footerLogo {
+    font-weight: bold;
+    font-size: 200%;
+    color: #d0d0d0;
+}
+
+
+.footerList {
+    color: #d0d0d0;
+}
+
+#footerCopyright {
+    color: #d0d0d0;
+    font-size: 80%;
+    padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+    #middle {
+        margin-top: 10%;
+    }
+
+    #footer {
+        margin-top: 10%;
+    }
+}
