@@ -14,7 +14,7 @@
 
 #headerLogo {
     margin: 0px;
-    font-size: 180%;
+    font-size: 120%;
     color: white;
     font-weight: bold;
 }
@@ -33,7 +33,7 @@
     width: 40%;
     background-color: rgba(255, 255, 255, 0);
     color: white;
-    font-size: 130%;
+    font-size: 100%;
 }
 
 @media (max-width: 768px) {
