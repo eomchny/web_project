@@ -12,6 +12,7 @@
 
 #opening img {
     width: 100%;
+    height: 100%;
 }
 
 #main_menu {
@@ -42,14 +43,4 @@
 
 #menu_table td:hover:after {
     width: 100%;
-}
-
-
-@media (max-width: 768px) {
-    #opening_wrap{
-        height: 80vh;
-    }
-    #main_menu {
-        bottom: 20%;
-    }
 }
