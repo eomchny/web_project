@@ -1,0 +1,55 @@
+#opening_wrap {
+    background-color: #046feb;
+    padding: 10px;
+    height: 100vh;
+}
+
+#opening {
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+}
+
+#opening img {
+    width: 100%;
+}
+
+#main_menu {
+    background-color: #046feb;
+    position: absolute;
+    bottom: 0%;
+}
+
+#menu_table {
+    border-spacing: 20px;
+    border-collapse: separate;
+    color: white;
+}
+
+#menu_table td {
+    cursor: pointer;
+}
+
+#menu_table td:after {
+    content: " ";
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin-top: 3px;
+    transition: 0.3s;
+}
+
+#menu_table td:hover:after {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    #opening_wrap{
+        height: 80vh;
+    }
+    #main_menu {
+        bottom: 20%;
+    }
+}

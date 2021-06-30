@@ -1,0 +1,13 @@
+#cost .container {
+    width: 40%;
+}
+
+#cost img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #cost .container {
+        width: 85%;
+    }
+}

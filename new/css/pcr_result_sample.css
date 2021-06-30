@@ -1,0 +1,11 @@
+#pcr_result_sample img {
+    width: 100%;
+}
+
+.pcr_result_name {
+    text-align: center;
+    margin: 0px;
+    padding: 5px 0 5px 0;
+    font-size: 110%;
+    font-weight: bold;
+}

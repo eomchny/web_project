@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>【PCR検査】名古屋ステーションクリニック - オンラインで予約／海外渡航に必要な新型コロナウイルスの陰性証明書も発行可能(ハワイ,中国)</title>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--jQuery_markdown_convert-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <!--fade library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!--import Css-->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/access.css">
+    <link rel="stylesheet" href="css/pcr_result_sample.css">
+    <link rel="stylesheet" href="css/advantage.css">
+    <link rel="stylesheet" href="css/cost.css">
+    <link rel="stylesheet" href="css/flow.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <link rel="stylesheet" href="css/opening.css">
+    <link rel="stylesheet" href="css/country.css">
+    <link rel="stylesheet" href="css/question.css">
+</head>
+
+<body>
+
+    <button id="top_btn">
+        <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+    </button>
+    
+
+    <!--opening-->
+    <div id="opening_wrap">
+        <div id="opening">
+            <img src="images/pcr-0-base800.png">
+        </div>
+        <div id="main_menu">
+            <table id="menu_table">
+                <tr>
+                    <td class="move_btn" data-id=1>金額</td>
+                    <td class="move_btn" data-id=2>お知らせ</td>
+                    <td class="move_btn" data-id=3>当院のPCR検査の強み</td>
+                    <td class="move_btn" data-id=4>アクセスマップ</td>
+                </tr>
+                <tr>
+                    <td class="move_btn" data-id=5>PCR検査の流れ</td>
+                    <td class="move_btn" data-id=6>主な海外渡航先の入国条件</td>
+                    <td class="move_btn" data-id=7>陰性証明書サンプル</td>
+                    <td class="move_btn" data-id=8>質問と回答</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--金額-->
+    <div id="cost" data-aos="fade-up" class="section" data-val=1>
+        <div class="container">
+            <p class="section_title"><span>料金</span></p>
+            <div class="row">
+                <img src="images/cost.png">
+            </div>
+
+        </div>
+    </div>
+
+    <!--お知らせ-->
+    <div id="notice" data-aos="fade-up" class="section" data-val=2>
+        <div class="container">
+            <p class="section_title"><span>お知らせ</span></p>
+
+            <div id="notice_list"></div>
+
+        </div>
+    </div>
+
+    <!--当院のPCR検査の強み-->
+    <div id="advantage" data-aos="fade-right" class="section" data-val=3>
+        <div class="container">
+            <p class="section_title"><span>当院のPCR検査の強み</span></p>
+
+            <!--追加する場合、row単位でコピ / ここからー-->
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="advantage_title">医療機関指定がある国の認定取得
+                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </p>
+                    <div class="advantage_content">[中国、ハワイ州、ベトナム]の渡航の際、各国が指定又は認可する医療機関での検査と陰性証明書が必要になります。名古屋ステーションクリニックでは、当院は上記3ヵ国の指定/認可を受けております。ご安心下さい。</div>
+                </div>
+            </div>
+            <!--ここまで-->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="advantage_title">アクセスが良い立地[中部国際空港直結]
+                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </p>
+                    <div class="advantage_content">名古屋駅前の好立地。JR・私鉄以外に空港バスのバスターミナルもあり中部国際空港に大変アクセスしやすい場所にございます。</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="advantage_title">PCR検査専用カウンター設置
+                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </p>
+                    <div class="advantage_content">検査のみの方をお待たせしないようPCR検査を円滑に行うためにPCR検査用の専用カウンターを設置致しました。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--アクセスマップ-->
+    <div id="access" data-aos="fade-left" class="section" data-val=4>
+        <div class="container">
+            <p class="section_title"><span>アクセスマップ</span></p>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6522.83960429986!2d136.885019!3d35.171088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dd09fc8455%3A0xe9516162212bd0a6!2s4-ch%C5%8Dme-6-17%20Meieki%2C%20Nakamura%20Ward%2C%20Nagoya%2C%20Aichi%20450-0002!5e0!3m2!1sko!2sjp!4v1624852906504!5m2!1sko!2sjp" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-sm-6">
+                    <ul>
+                        <li>■〒450-0002　</li>
+                        <li>名古屋市中村区名駅4-6-17 名古屋ビルディング９階</li>
+                        <li>TEL:052-551-6667</li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>※当院は８階、９階とございますが、<br>海外渡航PCR検査の受付は9階になります。</li>
+                        <li>※ユニモール3番・または５番出口すぐです。</li>
+                        <li>※大名古屋ビルヂングと間違われる方がいらっしゃいます。ご来院の際は十分ご注意下さい。</li>
+                        <li>※名古屋ビルディングは、１階にブランドショップのプラダ・大垣共立銀行ATMがある14階建のビルです。</li>
+                    </ul>
+                    <br>
+                    <button data-aos="fade-up" class="map_detail" data-toggle="modal" data-target="#gd_route">地上からのルート</button>
+                    <button data-aos="fade-up" class="map_detail" data-toggle="modal" data-target="#ug_route">地下からのルート</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PCR検査の流れ-->
+    <div id="pcr_flow" data-aos="fade-right" class="section" data-val=5>
+        <div class="container">
+            <p class="section_title"><span>PCR検査の流れ</span></p>
+            <div class="row">
+                <div class="col-sm-5 flow_wrap">
+                    <div class="flow_box">
+                        <p>陰性証明書</p>
+                        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                        <p>検査結果の確認</p>
+                        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                        <p>検体採取</p>
+                        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                        <p>検査予約</p>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <ul>
+                        <li>検査結果は、検査依頼者の電話連絡または結果通知メールにより結果が出たことを認知しWeb上で結果を確認</li>
+                    </ul>
+                    <br>
+                    <div id="flow_detail_wrap"><button id="flow_detail" data-toggle="modal" data-target="#flow_chart">詳細はこちら</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--主な海外渡航先の入国条件-->
+    <div id="countries" data-aos="fade-left" class="section" data-val=6>
+        <div class="container">
+            <p class="section_title"><span>主な海外渡航先の入国条件</span></p>
+            <div class="row">
+                <div class="col-sm-5 col-sm-push-7 country_info">
+                    
+                </div>
+                <div class="col-sm-7 col-sm-pull-5 country_link_wrap">
+                   <ul>
+                       <li>
+                           渡航先の入国条件について
+                        情報の変更される場合がございます。
+                        外務省または渡航先の大使館/領事館でご確認下さい。
+                       </li>
+                   </ul>
+                   <br>
+                    <a href="country.html" target="_blank" class="country_link">入国条件一覧</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--陰性証明書（サンプル）-->
+    <div id="pcr_result_sample" data-aos="fade-right" class="section" data-val=7>
+        <div class="container">
+            <p class="section_title"><span>陰性証明書（サンプル）</span></p>
+            <div class="row">
+                <div class="col-sm-6"><img src="images/pcr-12-003.png">
+                    <p class="pcr_result_name">陰性証明書（英文）</p>
+                </div>
+                <div class="col-sm-6"><img src="images/pcr-12-004.png">
+                    <p class="pcr_result_name">陰性証明書（中国）</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--質問と回答-->
+    <div id="question" data-aos="fade-up" class="section" data-val=8>
+        <div class="container">
+            <p class="section_title"><span>質問と回答</span></p>
+
+            <div id="quest_list"></div>
+        </div>
+    </div>
+
+    <!--footer_fixed_menu-->
+    <div id="footer_fix">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 footer_fix_link">
+                    <a href="tel:0525516667" target="_blank">
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                        電話相談(AM9:00~17:00, 土日祝,休業日を除く)
+                    </a>
+                </div>
+
+                <div class="col-sm-6 footer_fix_link">
+                    <a href="https://app.online-karte.jp/rsv/p/onlinepcr/personal" target="_blank">
+                        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                        PCR 予約
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div id="footer">
+        <p id="footer_logo"><img src="images/logo.svg"></p>
+        <p class="footer_link"><a href="https://station-clinic.com/" target="_blank">名古屋ステーションクリニックHP</a></p>
+        <p id="copyright">Copyright (C) Nagoya Station Clinic. All Rights Reserved.</p>
+    </div>
+
+
+    <!--Modals-->
+    <!-- flow_chart -->
+    <div class="modal fade" id="flow_chart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="text-align: center;">
+            <img src="images/flow01.png">
+            <img src="images/flow02.png">
+            <img src="images/flow03.png">
+            <img src="images/flow04.png">
+        </div>
+    </div>
+
+    <!-- gd_route -->
+    <div class="modal fade" id="gd_route" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <!--イメージ変更こちらのURLを変更-->
+            <img src="images/gd_route.png" style="width: 100%">
+        </div>
+    </div>
+
+    <div class="modal fade" id="ug_route" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <!--イメージ変更こちらのURLを変更-->
+            <img src="images/ug_route.png" style="width: 100%">
+        </div>
+    </div>
+
+
+
+
+    <script>
+        $('#notice_list').load('notice.md');
+        $('#quest_list').load('question.md');
+
+        $('.advantage_title').click(function() {
+            if ($(this).next().css('height') == '0px') {
+                $(this).next().css('height', '100px');
+                $(this).find('span').attr('class', 'glyphicon glyphicon-triangle-top');
+            } else {
+                $(this).next().css('height', '0px');
+                $(this).find('span').attr('class', 'glyphicon glyphicon-triangle-bottom notice_btn');
+            }
+        });
+
+        $('#top_btn').click(function() {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 400);
+        });
+
+        $('.move_btn').click(function() {
+            var id = $(this).data('id');
+            var target_data = '[data-val=' + id + ']';
+            var target_obj = $(target_data).offset();
+            $('html').animate({
+                scrollTop: target_obj.top
+            }, 400);
+        });
+
+        AOS.init({
+            offset: 240,
+            duration: 1000
+        });
+    </script>
+</body></html>

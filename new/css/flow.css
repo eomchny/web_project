@@ -1,0 +1,67 @@
+#pcr_flow{
+    background-color: rgba(199, 199, 199, 0.15);
+}
+
+.flow_wrap {
+    text-align: center;
+}
+
+.flow_box {
+    writing-mode: vertical-rl;
+    position: relative;
+    margin: auto;
+}
+
+.flow_box p {
+    border: 1px solid;
+    margin: 0px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.flow_box span {
+    font-size: 70%;
+}
+
+/*detail btn*/
+#flow_detail {
+    float: right;
+    border: 1px solid #214e83;
+    color: #253548;
+    background-color: white;
+    width: 200px;
+    padding: 18px 0 18px 0;
+    transition: 0.3s;
+}
+
+#flow_detail:hover {
+    opacity: 0.8;
+}
+
+
+/*flow img*/
+#flow_chart img {
+    width: 40%;
+}
+
+/*modal border*/
+#flow_chart .modal-dialog {
+    border: 3px solid #214e83;
+    background-color: white;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    #flow_detail_wrap {
+        text-align: center;
+    }
+
+    #flow_detail {
+        float: none;
+    }
+
+    .flow_wrap {
+        margin-bottom: 20px;
+    }
+}
