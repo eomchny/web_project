@@ -1,0 +1,43 @@
+#opening {
+    height: 100%;
+    overflow: hidden;
+}
+
+#opening_wrap img {
+    width: 100%;
+}
+
+
+.pc_main,
+.mobile_main {
+    position: relative;
+    transition: 0.3s;
+}
+
+.pc_br_row {
+    position: absolute;
+    bottom: 50px;
+}
+
+.mobile_br_row {
+    position: absolute;
+    bottom: 70px;
+}
+
+.pc_br_row img {
+    width: 100%;
+}
+
+.mobile_main {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .pc_main {
+        display: none;
+    }
+
+    .mobile_main {
+        display: block;
+    }
+}

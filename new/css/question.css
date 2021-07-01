@@ -1,0 +1,27 @@
+.q_info {
+    font-size: 140%;
+    color: #257bdf;
+    cursor: pointer;
+}
+
+.a_info {
+    font-size: 130%;
+    color: black;
+    overflow: hidden;
+    height: 0px;
+}
+
+.quest_obj {
+    border-bottom: 1px dotted #a5a5a5;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .q_info {
+        font-size: 120%;
+    }
+
+    .a_info {
+        font-size: 110%;
+    }
+}
