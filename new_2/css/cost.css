@@ -1,0 +1,44 @@
+.cost_row {
+    text-align: center;
+
+}
+
+.cost_col {
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fafafa;
+    border-radius: 20px;
+}
+
+.cost_name {
+    font-size: 150%;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
+}
+
+.cost_num {
+    font-size: 140%;
+    font-weight: bold;
+    color: #37298e;
+}
+
+.zeikomi {
+    font-size: 120%;
+    font-weight: bold;
+    color: #37298e;
+}
+
+
+@media (max-width: 768px) {
+    .cost_col {
+        margin-bottom: 15px;
+    }
+
+    .cost_name,
+    .cost_num,
+    .zeikomi {
+        padding: 0px;
+        margin: 0px;
+    }
+}

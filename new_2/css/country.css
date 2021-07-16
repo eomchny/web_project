@@ -1,0 +1,33 @@
+
+
+.country_info {
+    font-size: 110%;
+}
+
+.country_link {
+    border: 1px solid #214e83;
+    color: #253548;
+    background-color: white;
+    width: 200px;
+    padding: 18px 0 18px 0;
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s;
+}
+.country_link:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    .country_link_wrap {
+        text-align: center;
+    }
+
+    .country_info {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,32 @@
+#menu {
+    background-color: rgba(255, 255, 255, 0.88);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    text-align: center;
+    width: 0px;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#menu_ul {
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: 23%;
+}
+
+#menu_ul li {
+    margin-bottom: 15px;
+    font-size: 140%;
+    cursor: pointer;
+}
+
+#menu_btn {
+    position: fixed;
+    z-index: 30;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 25px;
+}
