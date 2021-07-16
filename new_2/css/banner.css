@@ -1,0 +1,119 @@
+#banner {
+    height: 100vh;
+    background-image: url(stethoscope.png);
+}
+
+#banner p {
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+
+#banner_1 {
+    font-size: 250%;
+}
+
+#banner_2 {
+    font-size: 300%;
+}
+
+#banner_3 {
+    font-size: 150%;
+}
+
+#banner_item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.banner_list {
+    border: 1px solid #d9d7d7;
+    border-radius: 5px;
+}
+
+.banner_icon {
+    text-align: center;
+    margin: 0px;
+    font-size: 50px;
+    color: #257bdf;
+}
+
+.banner_title {
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.banner_content {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 120%;
+}
+
+#banner_img img {
+    width: 600px;
+}
+
+#banner_more {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+}
+
+@media (max-width: 768px) {
+    #banner_img img {
+        width: 300px;
+    }
+
+    #banner p {
+        top: 30%;
+    }
+
+    #banner_3 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #banner_1 {
+        font-size: 150%;
+    }
+
+    #banner_2 {
+        font-size: 260%;
+    }
+
+    #banner_3 {
+        font-size: 150%;
+    }
+
+    .banner_list {
+        margin-top: 7px;
+    }
+
+    .banner_icon {
+        display: inline-block;
+        font-size: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .banner_title {
+        display: inline-block;
+    }
+
+    .banner_content {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: left;
+        padding-left: 5px;
+    }
+}

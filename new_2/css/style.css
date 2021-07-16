@@ -1,0 +1,1228 @@
+@charset "utf-8";
+/* CSS Document */
+/* reset */
+/*===========================================================
+   共通
+===========================================================*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable, .body_secClass03, .body_type02, .td-a02gr, .td-a02ug {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1024px; /* (表示領域)横幅最大1024px */
+  margin: 0px auto;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+
+table {
+  table-layout:fixed;      /* IE Tableバグ対応 */
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+q:before, q:after {
+  content: '';
+}
+object, embed {
+  vertical-align: top;
+}
+legend {
+  display: none;
+}
+img, abbr, acronym, fieldset {
+  border: 0;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+section {
+  padding-top: 0px;
+}
+section h2 {
+  margin: 0 auto 0px;
+}
+section h2 span {
+  padding: 0 0px;
+}
+.innerS_Comm {
+  margin: 0px 2%;
+  text-align: center;
+}
+.innerS_Comm img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.innerS_CommLink {
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 2px 3px #00fa9a;
+  text-decoration: none;
+}
+.innerS_inline_pic {
+  margin: 0px 5%;
+  text-align: center;
+}
+.innerS_inline_pic img {
+  max-width: 80%;
+  max-height: 80%;
+}
+#header {
+  text-align: center;
+}
+#header h1 {
+  padding-top: 60px;
+}
+#header h2 {
+  text-shadow: 1px 2px 3px #808080;
+  padding-top: 60px;
+}
+.tbl-r05 td:first-child {
+  background: #fbf5f5;
+}
+/*------------------------------------------------------------
+   Scroll Effect
+------------------------------------------------------------*/
+/*下から上にフェードイン*/
+.down-to-top {
+  opacity: 0.1;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+.down-to-top.scrollin {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*------------------------------------------------------------
+   [フッダー設定]
+------------------------------------------------------------*/
+#footer-fixed1 {
+  position: fixed; /* フッターの固定 */
+  bottom: 0px; /* 位置(下0px) */
+  left: 0px; /* 位置(左0px) */
+  width: 100%; /* 横幅100%　*/
+  height: 90px; /* 縦幅70px */
+  background-color: #000000; /* 背景色(黒) */
+  text-align: center;
+}
+#footer-fixed1 img {
+  height: 80px;
+  width: auto;
+  margin: 5px;
+}
+#footer-fixed1 .a_tag {
+  margin: 0px;
+}
+#footer-fixed1 .a_tag1 {
+  margin: -12px;
+}
+#footer-fixed1 .a_tag2 {
+  margin: 0px;
+}
+#footer-fixed2 {
+  position: fixed; /* フッターの固定 */
+  bottom: 0px; /* 位置(下0px) */
+  left: 0px; /* 位置(左0px) */
+  width: 100%; /* 横幅100%　*/
+  height: 85px; /* 縦幅85px */
+  background-color: #000000; /* 背景色(黒) */
+  text-align: center;
+}
+#footer-fixed2 img {
+  height: 64px;
+  width: auto;
+  margin: 3px;
+}
+#footer-fixed2 .a_tag3 {
+  margin: 2px;
+}
+#footer-fixed2 .a_tag4 {
+  margin: -9px;
+}
+#footer-fixed2 .a_tag5 {
+  margin: -9px;
+}
+#footer-fixed2 .a_tag6 {
+  margin: -9px;
+}
+.pcr_flow801 {
+  display: block;
+}
+.pcr_flow800 {
+  display: none;
+}
+.pcr_flow460 {
+  display: none;
+}
+.pcr_flow801f {
+  display: block;
+}
+.pcr_flow800f {
+  display: none;
+}
+/*------------------------------------------------------------
+   Top画面
+------------------------------------------------------------*/
+#topdiv {
+  background: #2486ca;
+  position: relative; /* 親要素 */
+}
+#topdiv img {}
+/*------------------------------------------------------------
+   言語選択
+------------------------------------------------------------*/
+#glink {
+  Top: 1px;
+  left: 849px;
+  height: 25px;
+  width: auto;
+  padding-top: 1px;
+  position: absolute;
+}
+/*------------------------------------------------------------
+  Top Square設定
+------------------------------------------------------------*/
+#square1 {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  opacity: 0.0;
+  object-fit: cover;
+}
+#square2 {
+  width: 200px;
+  height: auto;
+
+  position: absolute;
+  opacity: 0.0;
+  object-fit: cover;
+}
+#square3 {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  opacity: 0.0;
+  object-fit: cover;
+}
+#square4 {
+  height: 180;
+  width: auto;
+  position: absolute;
+  opacity: 0.0;
+  object-fit: cover;
+}
+#square5 {
+  height: 180;
+  width: auto;
+  position: absolute;
+  opacity: 0.0;
+  object-fit: cover;
+}
+#square6 {
+  height: 180;
+  width: auto;
+  position: absolute;
+  opacity: 0.0;
+  object-fit: cover;
+}
+/*------------------------------------------------------------
+   PCR検査の基本的な流れ
+------------------------------------------------------------*/
+#body_sec01 {
+  content: '';
+  background: #2486ca;
+  position: relative; /* 親要素 */
+}
+#body_sec01 img {}
+/*------------------------------------------------------------
+   矢印位置 初期値設定
+------------------------------------------------------------*/
+/* 800px以上(1024px base) */
+#ar_pos11 {
+  position: absolute;
+  top: 122px;
+  left: 239px;
+  object-fit: cover;
+}
+#ar_pos12 {
+  position: absolute;
+  top: 122px;
+  left: 492px;
+  object-fit: cover;
+}
+#ar_pos13 {
+  position: absolute;
+  top: 122px;
+  left: 730px;
+  object-fit: cover;
+}
+/* 799px以上(799px base) */
+#ar_pos21 {
+  position: absolute;
+  top: 265px;
+  left: 339px;
+}
+#ar_pos22 {
+  position: absolute;
+  top: 455px;
+  left: 339px;
+}
+#ar_pos23 {
+  position: absolute;
+  top: 645px;
+  left: 339px;
+}
+/*------------------------------------------------------------
+   質問と回答
+------------------------------------------------------------*/
+.body_type02 {
+  font-size: 100%;
+  font-weight: normal;
+  padding: 1% 1%; /*(修正)上下、左右へのボックス内の余白*/
+  margin: 0 0 0px; /*上、左右、下へのボックスの外側への余白*/
+}
+/*h2タグ*/
+.body_type02 h2 {
+  background: #2486ca no-repeat 100% 100% fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  padding: 25px; /* (追加)内側余白追加 */
+  clear: both;
+  margin-bottom: 10px; /*下に空けるボックスの外側への余白*/
+  font-size: 150%; /*(修正)文字サイズ 200%→120%*/
+  text-align: center; /*文字を中央に*/
+  line-height: 1.2; /*行間を基準より少し狭くする*/
+  color: #FFFFFF;
+}
+/*h2タグ内のspanタグ（英語の飾り文字）*/
+.body_type02 h2 span {
+  display: block;
+  font-size: 40%; /*文字サイズ*/
+  color: #2486ca; /*文字色*/
+  letter-spacing: 0.2em; /*文字間隔を少し広くとる設定*/
+}
+/*段落タグ*/
+.body_type02 p {
+  padding: 0 20px 40px;
+}
+.body_type02 p + p {
+  margin-top: 0px;
+}
+/*section同士の余白*/
+.body_type02 section + section {
+  margin-top: 0px;
+}
+/*------------------------------------------------------------
+   サイトマップ
+------------------------------------------------------------*/
+.body_type03 {
+  font-size: 85%;
+  padding: 1% 1%; /*(修正)上下、左右へのボックス内の余白*/
+  margin: 0 0 100px; /*上、左右、下へのボックスの外側への余白*/
+  text-align: center; /*センタリング*/
+}
+.body_type03 p {
+  font-size: 90%;
+  padding: 15px 0px 0px;
+}
+.body_type03 a {
+  padding: 1% 1%; /*(修正)上下、左右へのボックス内の余白*/
+  text-decoration: none;
+}
+/*------------------------------------------------------------
+   よく頂く質問ページ
+------------------------------------------------------------*/
+/*ブロック全体*/
+#faqform {
+  padding: 0px 25px; /*上下、左右への余白*/
+}
+/*質問の設定*/
+#faqform dt {
+  font-size: 90%;
+  color: #2486ca; /*文字色*/
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+/*回答の設定*/
+#faqform dd {
+  font-size: 90%;
+  border-bottom: 1px solid #ccc; /*下線の幅、線種、色*/
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+/*「Q」と「A」のマーク共通設定*/
+#faqform dt::before, #faqform dd::before {
+  font-size: 90%;
+  margin-right: 5px;
+  display: inline-block;
+  text-align: center;
+  width: 30px; /*幅*/
+  line-height: 30px; /*高さ*/
+}
+/*「Q」のマーク追加設定*/
+#faqform dt::before {
+  content: "Q"; /*「Q」の文字を出力する設定*/
+  background: #2486ca; /*背景色*/
+  color: #fff; /*文字色*/
+}
+/*「A」のマーク追加設定*/
+#faqform dd::before {
+  content: "A"; /*「A」の文字を出力する設定*/
+  background: #999; /*背景色*/
+  color: #fff; /*文字色*/
+}
+/*テーブル */
+#company .ta1 caption, #company .ta2 caption {
+  border: 1px solid #999; /*テーブルの枠線の幅、線種、色*/
+  border-bottom: none; /*下線だけ消す*/
+  text-align: left; /*文字を左寄せ*/
+  background: #cce6f6; /*背景色*/
+  font-weight: bold; /*太字に*/
+  padding: 10px; /*ボックス内の余白*/
+}
+/*ta1,ta2共通設定*/
+#company .ta1, #company .ta2 {
+  width: 96%;
+  table-layout: fixed;
+  margin: 0 2% 30px;
+}
+#company .ta1, #company .ta1 td, #company .ta1 th, #company .ta2, #company .ta2 td, #company .ta2 th {
+  font-size: 85%;
+  border: 1px solid #999; /*テーブルの枠線の幅、線種、色*/
+  line-height: 2;
+  padding: 10px; /*ボックス内の余白*/
+  word-break: break-all;
+}
+/*ta1の左側ボックス*/
+#company .ta1 th {
+  font-size: 85%;
+  width: 100px; /*幅*/
+  text-align: center; /*センタリング*/
+  background: #f0f0f0; /*背景色*/
+  font-weight: normal;
+}
+/*ta2の左側ボックス*/
+#company .ta2 th {
+  background: #fffeba; /*背景色*/
+}
+/*ta2の右側ボックス*/
+#company .ta2 td {
+  font-size: 85%;
+  text-align: center; /*センタリング*/
+}
+/*料金ページの追加設定（CMS用）*/
+#company .ta1.price td {
+  font-size: 85%;
+  text-align: right;
+}
+#company .ta1.price tr.total th {
+  background: #b7e0ee;
+  font-size: 150%;
+}
+#company .ta1.price tr.total td {
+  background: #deeff4;
+  font-weight: bold;
+  font-size: 150%;
+}
+#company ul, #company ol, #company li {
+  font-size: 100%;
+}
+/*------------------------------------------------------------
+   お問合せ
+------------------------------------------------------------*/
+#formWrap {
+  padding: 1% 1%; /*(修正)上下、左右へのボックス内の余白*/
+  margin: 0 auto;
+  color: #555;
+  line-height: 120%;
+}
+#formWrap .formTable {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+#formWrap .formTable td, #formWrap .formTable th {
+  font-size: 90%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+#formWrap .formTable th {
+  width: 30%;
+  font-weight: normal;
+  background: #efefef;
+  text-align: left;
+}
+#formWrap .formTable a {
+  padding: 2px 8px;
+  background: red;
+  color: white;
+  border-radius: 5px;
+}
+/*------------------------------------------------------------
+   Section別表示タイプ01h
+------------------------------------------------------------*/
+.body_type01h {
+  border-top: solid #0B86EB;
+  border-top-width: 5px;
+  padding: 5% 0% 5% 0%;
+  margin: 5% 0px 0px 0px;
+}
+.body_type01h img {
+  padding: 0% 0%;
+}
+.body_type01h h2 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 165%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+}
+.body_type01h h3 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 140%;
+  text-align: center;
+}
+.body_type01h p {
+  font-size: 110%;
+  text-align: left;
+}
+/*------------------------------------------------------------
+   Section別表示タイプ01n
+------------------------------------------------------------*/
+.body_type01n {
+  padding: 5% 0% 5% 0%;
+  margin: 5% 0px 0px 0px;
+}
+.body_type01n img {
+  padding: 0% 0%;
+}
+.body_type01n h2 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 165%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+}
+.body_type01n h3 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 140%;
+  text-align: center;
+}
+.body_type01n p {
+  font-size: 110%;
+  text-align: left;
+}
+/*------------------------------------------------------------
+   Section別表示タイプ01
+------------------------------------------------------------*/
+.body_type01 {
+  border-top: solid #0B86EB;
+  border-top-width: 1px;
+  padding: 5% 0% 5% 0%;
+  margin: 5% 0px 0px 0px;
+}
+.body_type01 img {
+  padding: 0% 0%;
+}
+.body_type01 h2 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 165%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+}
+.body_type01 h3 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 140%;
+  text-align: center;
+}
+.body_type01 p {
+  font-size: 110%;
+  text-align: left;
+}
+/* ロゴ用設定 */
+.innerS_Comm_logo {
+  padding: 7% 0%;
+  text-align: center;
+}
+.innerS_Comm_logo img {
+  width: 60%;
+}
+.innerS_Comm_introduction, .innerS_Comm_introduction1, .innerS_Comm_introduction2, .innerS_Comm_introduction3 {
+  color: #2486ca;
+  font-size: 95%;
+  width: 95%;
+  margin: 0 auto;
+}
+.innerS_Comm_introduction1 p {
+  text-align: center;
+}
+.innerS_Comm_introduction2 {
+  padding: 0 0 7% 0;
+}
+.innerS_Comm_introduction3 {
+  padding: 0 0 3% 0;
+}
+.innerS_Comm_details, .innerS_Comm_details2 {
+  padding: 3% 0 0;
+  font-size: 82%;
+  width: 90%;
+  margin: 0 auto;
+}
+.innerS_Comm_details3 {
+  padding: 3% 0 0;
+}
+.innerS_Comm_details2 p {
+  text-align: center;
+}
+.innerS_Comm_details3 p {
+  font-size: 90%;
+  padding: 0% 12%;
+}
+.innerS_Comm_details4 p {
+  font-style: 2%;
+  padding: 2% 12% 0;
+}
+.innerS_Comm_details4 .textlarge {
+  font-size: 120%;
+  font-weight: bold;
+}
+.innerS_Comm_details4 .liCheck {
+  color: red;
+}
+.innerS_Comm_details4 li {
+  padding: 0% 18%;
+  text-align: left;
+}
+.innerS_Comm_link {
+  text-align: right;
+  padding: 3% 5% 0%;
+}
+.innerS_Comm_link a {
+  text-decoration: none;
+  font-size: 105%;
+  padding: 2px 8px;
+  background: #D827F0;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.innerS_Comm_box {
+  font-size: 80%;
+  margin: 40px auto;
+  padding: 1% 0 1% 4%;
+  width: 80%;
+  border-radius: 10px;
+  border: 3px solid #2486ca;
+}
+.innerS_Comm_Infobox {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #62c1ce;
+}
+.innerS_Comm_Infobox .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -27px;
+  left: -3px;
+  padding: 0 9px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 17px;
+  background: #62c1ce;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.innerS_Comm_Infobox p {
+  margin: 0;
+  padding: 0;
+}
+.pcr_flow_t {
+  margin: 0px 15%;
+}
+.pcr_flow_tt {
+  text-align: center;
+}
+.pcr_flow_yy {
+  width: 100%;		/* IE Tableバグ対応 */
+}
+.pcr_flow_ywj {
+  width: 20%;
+}
+.pcr_flow_ywy {
+  width: 3%;
+}
+/* 並び設定 */
+.innerS_rps01 {
+  display: table; /* ブロックレベル要素をtableと同じように表示にする */
+}
+.innerS_rps01_elm {
+  display: table-cell;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0% 0% 5% 0%;
+}
+.innerS_rps01_elm img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  height: auto;
+}
+.innerS_rps01_elm p {
+  text-align: center;
+}
+/*------------------------------------------------------------
+   お知らせ
+------------------------------------------------------------*/
+.innerS_Information {
+  padding: 3% 5% 0;
+}
+.innerS_Information p {
+  font-size: 95%;
+  font-weight: bold;
+  text-align: center;
+}
+.tbl-i01 {
+  border: "1";
+  style: "border-collapse: collapse";
+  width: 100%;
+}
+.td_i01 {
+  background-color: #e2f1ff;
+  color: black;
+  text-align: Left;
+}
+.td_i02 {
+  background-color: #f9feff;
+  color: black;
+  text-align: Left;
+}
+.dti01 {
+  width: 36%;
+}
+.dti02 {
+  width: 64%;
+}
+/*------------------------------------------------------------
+   個人情報の扱い
+------------------------------------------------------------*/
+#privacy {
+  padding: 1% 1%; /*(修正)上下、左右へのボックス内の余白*/
+  margin: 0 auto;
+  color: #555;
+  line-height: 120%;
+}
+#privacy h3 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 140%;
+  padding: 1%;
+  border-bottom: 1px solid #000000;
+}
+#privacy p {
+  text-shadow: none;
+  font-size: 90%;
+  padding: 1% 1%;
+}
+#privacy dl {
+  text-shadow: 1px 1px 1px #808080;
+  font-size: 90%;
+  padding: 1% 1%;
+}
+#privacy dd {
+  text-shadow: none;
+  font-size: 95%;
+  padding: 0% 2% 1%;
+}
+#privacy .dd_a {
+  padding: 1% 0% 1% 1%;
+}
+#privacy #pre01 {
+  text-shadow: none;
+  font-size: 90%;
+  padding: 1% 2% 1%;
+}
+#privacy #pre02 {
+  text-shadow: none;
+  font-size: 90%;
+  padding: 1% 2% 1%;
+  text-align: right;
+}
+#privacy li {
+  list-style-type: disc;
+  text-shadow: none;
+  font-size: 82%;
+  padding: 0% 0% 2px;
+  margin-left: 5%;
+}
+#privacy #pr_p {
+  width: auto;
+}
+#privacy #pr_td01 {
+  width: 100%;
+  text-align: right;
+}
+#privacy #pr_td02 {
+  width: 40%;
+}
+#privacy img {
+  width: auto;
+  height: 60%;
+}
+/*------------------------------------------------------------
+  [アクセスマップ設定]
+------------------------------------------------------------*/
+.tbl-a01 {
+  border: "0";
+  style: "border-collapse: collapse";
+  width: 100%;
+}
+.td-a01 {
+  width: 100%;
+}
+.td-a01 iframe {
+  width: 100%;
+  height: 450px;
+  frameborder: 1;
+  border: 0;
+}
+.td-a02gr, .td-a02ug {
+  padding: 1% 3%;
+  width: 100px;/*50%;*/
+}
+.td-a02gr p, .td-a02ug p {
+  text-align: center;
+}
+.a_taga01u {
+  font-size: 90%;
+}
+.a_taga01d {
+  font-size: 80%;
+}
+/*------------------------------------------------------------
+  [アコーディオン設定]
+------------------------------------------------------------*/
+.menu__item {
+  background: #2486ca;
+  color: black;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 1px;
+}
+.menu__item__link {
+  color: white;
+  font-weight: bold;
+  display: block;
+  line-height: 60px;
+  padding: 0 1rem;
+  position: relative;
+  text-decoration: none;
+}
+.menu__item__link:after {
+  background: #2486ca;
+  content: '\f067';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  line-height: 60px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 60px;
+}
+.menu__item__link.on:after {
+  content: '\f068';
+}
+.submenu {
+  background: #fff;
+  display: none;
+}
+.submenu__item {
+  border-bottom: 1px solid #5200b7;
+  color: #222;
+  padding: 1rem;
+}
+.tbl-r05 {
+  border: "1";
+  style: "border-collapse: collapse";
+  width: 100%;
+}
+.tbl-r05 .thead {
+  display: none;
+}
+.tbl-r05 tr {
+  text-align: left;
+  width: 100%;
+}
+.tbl-r05 td {
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+.tbl-r05 td:first-child {
+  background: #e9727e;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.tbl-r05 td:before {
+  content: attr(data-label);
+  float: left;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.tbl-r01 {
+  border: "1";
+  style: "border-collapse: collapse";
+  width: 100%;
+}
+.td_g00 {
+  background: #e9727e;
+  color: black;
+  border: "1";
+  style: "border-collapse: collapse";
+}
+.dtd01 {
+  width: 25%;
+}
+.dtd02 {
+  width: 75%;
+}
+.td_g00g {
+  background-color: white;
+  font-weight: bold;
+}
+.td_g01 {
+  background-color: #f9feff;
+  color: black;
+  font-weight: bold;
+  text-align: Left;
+}
+.td_g02 {
+  background-color: #e2f1ff;
+  color: black;
+  font-weight: bold;
+  text-align: Left;
+}
+/*===========================================================
+   レスポンシブ設定
+===========================================================*/
+/*------------------------------------------------------------
+   画面サイズ 幅:800px以上
+------------------------------------------------------------*/
+@media only screen and (min-width: 800px) {
+  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable, .body_secClass03, .body_type02, .td-a02gr, .td-a02ug {
+    font-size: 20px;
+  }
+  .pcr_flow801 {
+    display: block;
+  }
+  .pcr_flow800 {
+    display: none;
+  }
+  .pcr_flow460 {
+    display: none;
+  }
+  .pcr_flow801f {
+    display: block;
+  }
+  .pcr_flow800f {
+    display: none;
+  }
+  #divlang img {
+    height: 25px;
+    width: auto;
+  }
+  /* 並び設定 */
+  .innerS_rps01 {
+    display: table; /* ブロックレベル要素をtableと同じように表示にする */
+  }
+  .innerS_rps01_elm {
+    display: table-cell;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0% 0% 5% 0%;
+  }
+  a#menu {
+    display: none;
+  }
+  .panel {
+    display: block !important;
+  }
+  #mainnav li {
+    display: inline-block;
+    padding: 50px 25px;
+    font-size: 15px;
+  }
+  /* SEC03 PROJECT
+	-----------------*/
+  .col3 {
+    text-align: center;
+  }
+  .col3 li {
+    display: inline-block;
+    width: 28%;
+    padding: 0 2.5% 50px;
+    margin-bottom: 0;
+    vertical-align: top;
+    text-align: left;
+  }
+  #footer {
+    padding: 30px 10px 70px 0;
+  }
+  #formWrap .formTable {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  #formWrap .formTable td, #formWrap .formTable th {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  #formWrap .formTable th {
+    width: 30%;
+    font-weight: normal;
+    background: #efefef;
+    text-align: left;
+  }
+}
+/*------------------------------------------------------------
+   画面サイズ 幅:641px以上
+------------------------------------------------------------*/
+@media only screen and (min-width: 641px) {
+  .col2 li {
+    width: 60%;
+    vertical-align: top;
+  }
+  .col2 li:first-child {
+    width: 35%;
+    padding-right: 4%;
+  }
+}
+/*------------------------------------------------------------
+   画面サイズ 幅:799px以下
+------------------------------------------------------------*/
+@media only screen and (max-width: 799px) {
+  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable, .body_secClass03, .body_type02, .td-a02gr, .td-a02ug {
+    font-size: 16px;
+  }
+  .pcr_flow801 {
+    display: none;
+  }
+  .pcr_flow800 {
+    display: block;
+  }
+  .pcr_flow460 {
+    display: none;
+  }
+  .pcr_flow801f {
+    display: none;
+  }
+  .pcr_flow800f {
+    display: block;
+  }
+  #divlang img {
+    height: 20px;
+    width: auto;
+  }
+  .innerS_rps01 {
+    display: block; /* ブロックレベル要素をtableと同じように表示にする */
+  }
+  .innerS_rps01_elm {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0% 0% 5% 0%;
+  }
+  #header {
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+  }
+  #TopImg {}
+  .col3 li {
+    margin: 50px auto 0 auto;
+    display: block;
+  }
+  section {
+    padding-top: 0px;
+  }
+  section h2 {
+    text-shadow: 1px 2px 3px #808080;
+    margin: 0 auto 20px;
+  }
+  section h2 span {
+    text-shadow: 1px 2px 3px #808080;
+    padding: 0 0px;
+  }
+  #faqform {
+    padding: 0px; /*余白*/
+  }
+  /*"Q"と"A"マーク*/
+  #faqform dt::before, #faqform dd::before {
+    width: 20px; /*幅*/
+    line-height: 20px; /*高さ*/
+  }
+  #formWrap {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #formWrap .formTable th, #formWrap .formTable td {
+    width: auto;
+    display: block;
+  }
+  #formWrap .formTable th {
+    margin-top: 5px;
+    border-bottom: 0;
+  }
+  input[type="text"], textarea {
+    width: 80%;
+    padding: 5px;
+    font-size: 110%;
+    display: block;
+  }
+  input[type="submit"], input[type="reset"], input[type="button"] {
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+}
+/*------------------------------------------------------------
+   画面サイズ 幅:460px以下
+------------------------------------------------------------*/
+@media only screen and (max-width: 506px) {
+  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable, .body_secClass03, .body_type02, .td-a02gr, .td-a02ug {
+    font-size: 16px;
+  }
+  .body_type01 h3 {
+    font-size: 100%;
+  }
+  .innerS_Comm_details3 p {
+    font-size: 95%;
+    padding: 0% 5%;
+  }
+  .innerS_rps01 {
+    display: block; /* ブロックレベル要素をtableと同じように表示にする */
+  }
+  .innerS_rps01_elm {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0% 0% 5% 0%;
+  }
+  .pcr_flow460 {
+    display: none;
+  }
+  .pcr_flow801f {
+    display: none;
+  }
+  .pcr_flow800f {
+    display: block;
+  }
+  .dtd01 {
+    width: 36%;
+  }
+  .dtd02 {
+    width: 64%;
+  }
+}
+/* Topに戻るボタン */
+#btn_page_top801 {
+  width: 110px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 95px;
+  opacity: 0.6;
+}
+#btn_page_top801 a {
+  position: relative;
+  display: block;
+  width: 110px;
+  height: 90px;
+  text-decoration: none;
+}
+#btn_page_top801 a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f102";
+  font-size: 40px;
+  color: darkgreen;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -2px;
+  bottom: 30;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#btn_page_top801 a::after {
+  content: 'PAGE TOP';
+  font-size: 95%;
+  font-weight: bold;
+  color: darkgreen;
+  position: absolute;
+  top: 45px;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#btn_page_top800 {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 95px;
+  opacity: 0.6;
+}
+#btn_page_top800 a {
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+#btn_page_top800 a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f102";
+  font-size: 35px;
+  color: darkgreen;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 35px;
+  bottom: 30;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#btn_page_top800 a::after {
+  content: 'PAGE TOP';
+  font-size: 95%;
+  font-weight: bold;
+  color: darkgreen;
+  position: absolute;
+  top: 75px;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
