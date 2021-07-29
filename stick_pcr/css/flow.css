@@ -1,0 +1,56 @@
+#flow_wrap {
+    background-color: black;
+    color: white;
+}
+
+#flow_title {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.flow_step {
+    margin: 0px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+}
+
+.flow_step:after {
+    content: '';
+    background-color: white;
+    ;
+    float: right;
+    padding-bottom: 3px;
+    transform: rotate(140deg);
+    width: 2px;
+    height: 23px;
+    position: relative;
+    right: 8px;
+    top: 3px;
+}
+
+.flow_img {
+    text-align: center;
+    font-size: 250%;
+}
+
+.flow_step_title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.flow_step_info {
+    color: #9d9d9d;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .flow_step_title {
+        font-size: 20px;
+    }
+    .flow_step_info {
+        font-size: 15px;
+    }
+}
