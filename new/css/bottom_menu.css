@@ -1,0 +1,42 @@
+#bottom_menu_wrap {
+    background-color: #222121;
+    padding: 5px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 99;
+}
+
+.bottom_link {
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.bottom_link:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+.bottom_stick {
+    margin: 0px;
+    font-size: 15px;
+    font-style: italic
+}
+
+@media (max-width: 768px) {
+    .bottom_link {
+        font-size: 12px;
+    }
+
+    .bottom_stick {
+        font-size: 10px;
+    }
+}

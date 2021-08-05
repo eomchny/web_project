@@ -1,67 +1,59 @@
-#pcr_flow{
-    background-color: rgba(199, 199, 199, 0.15);
+#flow_wrap {
+    background-color: black;
+    color: white;
 }
 
-.flow_wrap {
-    text-align: center;
-}
-
-.flow_box {
-    writing-mode: vertical-rl;
-    position: relative;
-    margin: auto;
-}
-
-.flow_box p {
-    border: 1px solid;
+#flow_title {
     margin: 0px;
-    padding: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
-.flow_box span {
-    font-size: 70%;
+.flow_step {
+    margin: 0px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+    font-size: 27px;
+    font-weight: bold;
 }
 
-/*detail btn*/
-#flow_detail {
+.flow_step:after {
+    content: '';
+    background-color: white;
+    ;
     float: right;
-    border: 1px solid #214e83;
-    color: #253548;
-    background-color: white;
-    width: 200px;
-    padding: 18px 0 18px 0;
-    transition: 0.3s;
+    padding-bottom: 3px;
+    transform: rotate(140deg);
+    width: 3px;
+    height: 46px;
+    position: relative;
+    right: 14px;
+    top: 2px;
 }
 
-#flow_detail:hover {
-    opacity: 0.8;
+.flow_img {
+    text-align: center;
+    font-size: 50px;
 }
 
-
-/*flow img*/
-#flow_chart img {
-    width: 40%;
+.flow_step_title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
 }
 
-/*modal border*/
-#flow_chart .modal-dialog {
-    border: 3px solid #214e83;
-    background-color: white;
-    border-radius: 15px;
+.flow_step_info {
+    color: #9d9d9d;
+    font-size: 20px;
 }
 
 @media (max-width: 768px) {
-    #flow_detail_wrap {
-        text-align: center;
+    .flow_step_title {
+        font-size: 20px;
     }
-
-    #flow_detail {
-        float: none;
-    }
-
-    .flow_wrap {
-        margin-bottom: 20px;
+    .flow_step_info {
+        font-size: 15px;
     }
 }

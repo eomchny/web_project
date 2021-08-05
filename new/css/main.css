@@ -1,0 +1,157 @@
+#main_wrap {
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+.main_div {
+    float: left;
+
+}
+
+#main_div_1 {
+    width: 10%;
+    height: 100%;
+}
+
+#main_tate {
+    writing-mode: vertical-rl;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: rgba(252, 252, 252, 0.15);
+}
+
+#main_div_2 {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+#main_div_3 {
+    width: 30%;
+    height: 100%;
+    background-image: url(tower.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#main_ul {
+    margin: 0px;
+    padding-left: 15px;
+    list-style: none;
+    margin-top: 100px;
+}
+
+#main_li_1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#main_li_2 {
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 5px #0000ff;
+}
+
+#main_li_3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#main_li_4,
+#main_li_5 {
+    font-size: 35px
+}
+
+#main_li_6 {
+    font-size: 30px;
+}
+
+#main_li_7 {
+    font-size: 40px;
+}
+
+#main_li_8 {
+    font-size: 30px;
+}
+
+#main_li_9 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#main_opacity {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #main_div_3 {
+        display: none;
+    }
+
+    #main_div_2 {
+        width: 90%;
+        background-image: url(tower.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #main_li_1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #main_li_2 {
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        text-shadow: 0 0 5px #0000ff;
+    }
+
+    #main_li_3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #main_li_4,
+    #main_li_5 {
+        font-size: 22px
+    }
+
+    #main_li_6 {
+        font-size: 17px;
+    }
+
+    #main_li_7 {
+        font-size: 26px;
+    }
+
+    #main_li_8 {
+        font-size: 20px;
+    }
+
+    #main_li_9 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #main_opacity {
+        display: block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.39);
+        width: 100%;
+        height: 100%;
+        opacity: 5;
+    }
+
+    #temp_temp {
+        position: relative;
+        opacity: 15;
+    }
+}

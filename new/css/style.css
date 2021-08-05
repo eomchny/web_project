@@ -4,7 +4,7 @@
 /*===========================================================
    共通
 ===========================================================*/
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable, .body_secClass03, .body_type02, .td-a02gr, .td-a02ug {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .innerS_Comm_Infobox00 p, .innerS_Comm_Infobox01 p, .formTable, .body_secClass03, .cp_fonts, .cp_fonts p {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 14px;
   margin: 0;
@@ -18,15 +18,13 @@ address, caption, cite, code, dfn, em, strong, th, var {
   font-style: normal;
 }
 ul {
-  list-style: none;
+  list-style: disc;
 }
-
 table {
-  table-layout:fixed;      /* IE Tableバグ対応 */
+  table-layout: fixed; /* IE Tableバグ対応 */
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 caption, th {
   text-align: left;
 }
@@ -48,37 +46,16 @@ img {
   width: auto;
   height: auto;
 }
-section {
-  padding-top: 0px;
-}
-section h2 {
-  margin: 0 auto 0px;
-}
-section h2 span {
-  padding: 0 0px;
-}
+
 .innerS_Comm {
-  margin: 0px 2%;
+  margin: 0px 0%;
   text-align: center;
 }
 .innerS_Comm img {
   max-width: 100%;
   max-height: 100%;
 }
-.innerS_CommLink {
-  font-weight: bold;
-  color: black;
-  text-shadow: 1px 2px 3px #00fa9a;
-  text-decoration: none;
-}
-.innerS_inline_pic {
-  margin: 0px 5%;
-  text-align: center;
-}
-.innerS_inline_pic img {
-  max-width: 80%;
-  max-height: 80%;
-}
+
 #header {
   text-align: center;
 }
@@ -89,9 +66,7 @@ section h2 span {
   text-shadow: 1px 2px 3px #808080;
   padding-top: 60px;
 }
-.tbl-r05 td:first-child {
-  background: #fbf5f5;
-}
+
 /*------------------------------------------------------------
    Scroll Effect
 ------------------------------------------------------------*/
@@ -176,269 +151,441 @@ section h2 span {
    Top画面
 ------------------------------------------------------------*/
 #topdiv {
-  background: #2486ca;
+  background: #ffffff;
   position: relative; /* 親要素 */
 }
 #topdiv img {}
-/*------------------------------------------------------------
-   言語選択
-------------------------------------------------------------*/
-#glink {
-  Top: 1px;
-  left: 849px;
-  height: 25px;
-  width: auto;
-  padding-top: 1px;
-  position: absolute;
-}
-/*------------------------------------------------------------
-  Top Square設定
-------------------------------------------------------------*/
-#square1 {
-  width: 200px;
-  height: auto;
-  position: absolute;
-  opacity: 0.0;
-  object-fit: cover;
-}
-#square2 {
-  width: 200px;
-  height: auto;
 
-  position: absolute;
-  opacity: 0.0;
-  object-fit: cover;
-}
-#square3 {
-  width: 200px;
-  height: auto;
-  position: absolute;
-  opacity: 0.0;
-  object-fit: cover;
-}
-#square4 {
-  height: 180;
-  width: auto;
-  position: absolute;
-  opacity: 0.0;
-  object-fit: cover;
-}
-#square5 {
-  height: 180;
-  width: auto;
-  position: absolute;
-  opacity: 0.0;
-  object-fit: cover;
-}
-#square6 {
-  height: 180;
-  width: auto;
-  position: absolute;
-  opacity: 0.0;
-  object-fit: cover;
-}
-/*------------------------------------------------------------
-   PCR検査の基本的な流れ
-------------------------------------------------------------*/
-#body_sec01 {
-  content: '';
-  background: #2486ca;
-  position: relative; /* 親要素 */
-}
-#body_sec01 img {}
-/*------------------------------------------------------------
-   矢印位置 初期値設定
-------------------------------------------------------------*/
-/* 800px以上(1024px base) */
-#ar_pos11 {
-  position: absolute;
-  top: 122px;
-  left: 239px;
-  object-fit: cover;
-}
-#ar_pos12 {
-  position: absolute;
-  top: 122px;
-  left: 492px;
-  object-fit: cover;
-}
-#ar_pos13 {
-  position: absolute;
-  top: 122px;
-  left: 730px;
-  object-fit: cover;
-}
-/* 799px以上(799px base) */
-#ar_pos21 {
-  position: absolute;
-  top: 265px;
-  left: 339px;
-}
-#ar_pos22 {
-  position: absolute;
-  top: 455px;
-  left: 339px;
-}
-#ar_pos23 {
-  position: absolute;
-  top: 645px;
-  left: 339px;
-}
-/*------------------------------------------------------------
-   質問と回答
-------------------------------------------------------------*/
-.body_type02 {
-  font-size: 100%;
-  font-weight: normal;
-  padding: 1% 1%; /*(修正)上下、左右へのボックス内の余白*/
-  margin: 0 0 0px; /*上、左右、下へのボックスの外側への余白*/
-}
-/*h2タグ*/
-.body_type02 h2 {
-  background: #2486ca no-repeat 100% 100% fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  padding: 25px; /* (追加)内側余白追加 */
-  clear: both;
-  margin-bottom: 10px; /*下に空けるボックスの外側への余白*/
-  font-size: 150%; /*(修正)文字サイズ 200%→120%*/
-  text-align: center; /*文字を中央に*/
-  line-height: 1.2; /*行間を基準より少し狭くする*/
-  color: #FFFFFF;
-}
-/*h2タグ内のspanタグ（英語の飾り文字）*/
-.body_type02 h2 span {
-  display: block;
-  font-size: 40%; /*文字サイズ*/
-  color: #2486ca; /*文字色*/
-  letter-spacing: 0.2em; /*文字間隔を少し広くとる設定*/
-}
-/*段落タグ*/
-.body_type02 p {
-  padding: 0 20px 40px;
-}
-.body_type02 p + p {
-  margin-top: 0px;
-}
-/*section同士の余白*/
-.body_type02 section + section {
-  margin-top: 0px;
-}
 /*------------------------------------------------------------
    サイトマップ
 ------------------------------------------------------------*/
-.body_type03 {
+.body_type90 {
   font-size: 85%;
   padding: 1% 1%; /*(修正)上下、左右へのボックス内の余白*/
   margin: 0 0 100px; /*上、左右、下へのボックスの外側への余白*/
   text-align: center; /*センタリング*/
 }
-.body_type03 p {
+.body_type90 p {
   font-size: 90%;
   padding: 15px 0px 0px;
 }
-.body_type03 a {
+.body_type90 a {
   padding: 1% 1%; /*(修正)上下、左右へのボックス内の余白*/
   text-decoration: none;
 }
+
 /*------------------------------------------------------------
-   よく頂く質問ページ
+   Section別表示タイプ01h
 ------------------------------------------------------------*/
-/*ブロック全体*/
-#faqform {
-  padding: 0px 25px; /*上下、左右への余白*/
+.body_type01 {
+  border-top: solid #000000;
+  border-top-width: 1px;
+
+  padding: 5% 0% 3% 0%;
+  margin: 0% 0px 0px 0px;
 }
-/*質問の設定*/
-#faqform dt {
-  font-size: 90%;
-  color: #2486ca; /*文字色*/
-  padding-top: 15px;
-  margin-bottom: 10px;
+.body_type01 img {
+  padding: 0% 0%;
 }
-/*回答の設定*/
-#faqform dd {
-  font-size: 90%;
-  border-bottom: 1px solid #ccc; /*下線の幅、線種、色*/
-  overflow: hidden;
-  padding-bottom: 10px;
-}
-/*「Q」と「A」のマーク共通設定*/
-#faqform dt::before, #faqform dd::before {
-  font-size: 90%;
-  margin-right: 5px;
-  display: inline-block;
+.body_type01 h1 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 140%;
   text-align: center;
-  width: 30px; /*幅*/
-  line-height: 30px; /*高さ*/
+  padding: 0% 0% 2% 0%;
+}.body_type01 h2 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 165%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
 }
-/*「Q」のマーク追加設定*/
-#faqform dt::before {
-  content: "Q"; /*「Q」の文字を出力する設定*/
-  background: #2486ca; /*背景色*/
-  color: #fff; /*文字色*/
-}
-/*「A」のマーク追加設定*/
-#faqform dd::before {
-  content: "A"; /*「A」の文字を出力する設定*/
-  background: #999; /*背景色*/
-  color: #fff; /*文字色*/
-}
-/*テーブル */
-#company .ta1 caption, #company .ta2 caption {
-  border: 1px solid #999; /*テーブルの枠線の幅、線種、色*/
-  border-bottom: none; /*下線だけ消す*/
-  text-align: left; /*文字を左寄せ*/
-  background: #cce6f6; /*背景色*/
-  font-weight: bold; /*太字に*/
-  padding: 10px; /*ボックス内の余白*/
-}
-/*ta1,ta2共通設定*/
-#company .ta1, #company .ta2 {
-  width: 96%;
-  table-layout: fixed;
-  margin: 0 2% 30px;
-}
-#company .ta1, #company .ta1 td, #company .ta1 th, #company .ta2, #company .ta2 td, #company .ta2 th {
-  font-size: 85%;
-  border: 1px solid #999; /*テーブルの枠線の幅、線種、色*/
-  line-height: 2;
-  padding: 10px; /*ボックス内の余白*/
-  word-break: break-all;
-}
-/*ta1の左側ボックス*/
-#company .ta1 th {
-  font-size: 85%;
-  width: 100px; /*幅*/
-  text-align: center; /*センタリング*/
-  background: #f0f0f0; /*背景色*/
-  font-weight: normal;
-}
-/*ta2の左側ボックス*/
-#company .ta2 th {
-  background: #fffeba; /*背景色*/
-}
-/*ta2の右側ボックス*/
-#company .ta2 td {
-  font-size: 85%;
-  text-align: center; /*センタリング*/
-}
-/*料金ページの追加設定（CMS用）*/
-#company .ta1.price td {
-  font-size: 85%;
-  text-align: right;
-}
-#company .ta1.price tr.total th {
-  background: #b7e0ee;
-  font-size: 150%;
-}
-#company .ta1.price tr.total td {
-  background: #deeff4;
-  font-weight: bold;
-  font-size: 150%;
-}
-#company ul, #company ol, #company li {
+.body_type01 h3 {
   font-size: 100%;
+  text-align: center;
+  padding: 0% 0% 0% 0%;
 }
+.body_type01 h4 {
+  font-size: 150%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+}
+.body_type01 h5 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 135%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+}
+
+.body_type01 p {
+  font-size: 110%;
+  text-align: left;
+}
+
+
+/*------------------------------------------------------------
+   Section別表示タイプ02h
+------------------------------------------------------------*/
+.body_type02 {
+  border-top: solid #000000;
+  border-top-width: 1px;
+
+  padding: 5% 0% 3% 0%;
+  margin: 0% 0px 0px 0px;
+}
+.body_type02 img {
+  padding: 0% 0%;
+}
+.body_type02 h1 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 140%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+}
+.body_type02 h2 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 165%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+}
+.body_type02 h3 {
+  font-size: 100%;
+  text-align: center;
+  padding: 0% 0% 0% 0%;
+}
+.body_type02 h4 {
+  font-size: 150%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+}
+.body_type02 h5 {
+  text-shadow: 2px 3px 4px #808080;
+  font-size: 135%;
+  text-align: center;
+  padding: 0% 0% 2% 0%;
+}
+
+
+.pcr_flow_t {
+  margin: 0px 15%;
+}
+.pcr_flow_tt {
+  text-align: center;
+}
+.pcr_flow_y {
+  padding: 0% 5%;
+}
+
+.pcr_flow_yy {
+  width: 100%; /* IE Tableバグ対応 */
+}
+.pcr_flow_ywj {
+  width: 20%;
+}
+.pcr_flow_ywy {
+  width: 3%;
+}
+
+/* 検査キット集配方法 */
+.innerS_rps01 {
+  display: table;
+}
+.innerS_rps01_elm {
+  display: table-cell;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0% 0% 3% 0%;
+}
+.innerS_rps01_elm img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 90%;
+  height: auto;
+}
+.innerS_rps01_elm p {
+  text-align: center;
+}
+
+/* information */
+.innerS_Comm {
+  margin: 0px 2%;
+  text-align: center;
+}
+
+.innerS_Comm_Infobox00 {
+  position: relative;
+  margin: 0 ;
+  padding: 0.5em 1em;
+/*	
+  border: solid 1px #8c8c8c;
+*/
+}
+.innerS_Comm_Infobox01 {
+  position: relative;
+  margin: 1em 0 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #8c8c8c;
+}
+.innerS_Comm_Infobox01 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -27px;
+  left: -3px;
+  padding: 0 9px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 17px;
+  background: #8c8c8c;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.innerS_Comm_Infobox00 img {
+	border: 2px solid black;
+}
+.innerS_Comm_Infobox00 p {
+	text-align: center;
+}
+
+.innerS_Comm_Infobox01 p {
+  margin: 0;
+  padding: 0;
+}
+
+/* flexbox */
+.div-flex01, .div-flex02, .div-flex03, .div-flex04, .div-flex05 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 8px;
+  border: 0px;
+  padding: 5px;
+}
+.div-flex05 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-diretion: row;
+  justify-content: space-around;
+  margin-bottom: 8px;
+  border: 0px;
+  padding: 5px 15px;
+}
+
+.div-flex02 {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.div-flex01:nth-child(odd), .div-flex02:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.div-flex03, .div-flex04{
+  flex-direction: row;
+}
+.div-flex03 {
+  padding: 0% 5%;
+}
+.div-flex04 {
+  padding: 0% 5%;
+}
+
+.div-flex01 .item-image .div-flex02 .item-image, .div-flex03 .item-image .div-flex04 .item-image {
+  width: 50%;
+  margin-bottom: 0;
+}
+.div-flex01 .item-image img, .div-flex02 .item-image img, .div-flex03 .item-image img, .div-flex04 .item-image img{
+  max-width: auto;
+  height: auto;
+}
+.div-flex05 .item-image {
+  max-width: 30%;
+  height: auto;
+}
+.div-flex05 .item-image .item-image img {
+  max-width: auto;
+  height: auto;
+}
+
+.div-flex03 .item-box {
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 150px;
+  height: 70px;  line-height: 70px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.div-flex01 .item-text, .div-flex02 .item-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.div-flex03 .item-text {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.div-flex04 .item-text {
+  display: flex;
+  flex: 1;
+  margin: 2% 1% 0% 8%;
+  align-items: center;
+  text-align: left;
+}
+.div-flex01 .item-text p, .div-flex02 .item-text p, .div-flex02 .item-text ul, .div-flex02 .item-text li, .div-flex03 .item-text p, .div-flex04 .item-text p, .div-flex04 .item-text ul, .div-flex04 .item-text li, .cp_fonts, .cp_fonts p {
+	font-size: 90%;
+}
+.div-flex02 .item-text .item-intext1 {
+  text-align: center;
+}
+.div-flex02 .item-text .item-intext2 {
+  text-align: left;
+}
+.div-flex04 .item-text .item-intext1 {
+  text-align: left;
+}
+
+.div-flexgroup1, .div-flexgroup2, .div-flexgroup3 {
+  padding: 0 0 5% 0;
+}
+.div-flexgroup2 .item-box {
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 300px;
+  height: 120px;  line-height: 40px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* 通常BOX */
+.div-box01, .div-box02 {
+  border: 0px;
+  padding: 5px;
+}
+.div-box01 p {
+  font-size: 90%;
+  padding: 0% 5% 8% 5%;
+}
+.div-box02 {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+.div-box02 p {
+  font-size: 90%;
+  padding: 0% 5% 8% 5%;
+}
+.div-img {
+	margin: 4%;
+}
+.div-img img{
+  widtg: auto;
+  height: auto;
+}
+
+/* Q&A */
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa .cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 1em 0;
+	color: #1b2538;
+}
+.cp_qa .cp_actab input {
+	position: absolute;
+	opacity: 0;
+}
+/* 質問 */
+.cp_qa .cp_actab label {
+	text-align: left;
+	font-weight: bold;
+	line-height: 1.6em;
+	position: relative;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 1em 2em 1em 2.5em;
+	cursor: pointer;
+	text-indent: 1em;
+	border-radius: 0.5em;
+	background: rgba(27,37,56,0.1);
+}
+.cp_qa .cp_actab label::before {
+	font-family: serif;
+	font-size: 1.5em;
+	margin-left: -2em;
+	padding-right: 0.5em;
+	content: 'Q';
+}
+.cp_qa .cp_actab label:hover {
+	transition: all 0.3s;
+	color: #00838f;
+}
+/* --質問の＋アイコン */
+.cp_qa .cp_actab label::after {
+	font-size: 1.7em;
+	font-weight: bold;
+	line-height: 2em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: '＋';
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	-webkit-transition: transform 0.4s;
+	        transition: transform 0.4s;
+}
+/* 答え */
+.cp_qa .cp_actab .cp_actab-content {
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	padding: 0 0 0 2.5em;
+	-webkit-transition: max-height 0.2s;
+	        transition: max-height 0.2s;
+	border-radius: 0 0 0.5em 0.5em;
+}
+.cp_qa .cp_actab .cp_actab-content::before {
+	font-family: serif;
+	font-size: 1.5em;
+	position: absolute;
+	margin: 0.4em 0 0 -1em;
+	padding: 0;
+	content: 'A';
+}
+.cp_qa .cp_actab .cp_actab-content p {
+	margin: 1em 1em 1em 0;
+}
+/* 質問を開いた時の仕様 */
+/* --答えの高さ */
+.cp_qa .cp_actab input:checked ~ .cp_actab-content {
+	max-height: 40em;
+	border: 10px solid rgba(27,37,56,0.1);
+}
+/* 質問をクリックした時のアイコンの動き */
+.cp_qa .cp_actab input:checked ~ label {
+	color: #00838f;
+	border-radius: 0.5em 0.5em 0 0;
+}
+/* 質問をクリックした時の+の動き */
+.cp_qa .cp_actab input[type=checkbox]:checked + label::after {
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
 /*------------------------------------------------------------
    お問合せ
 ------------------------------------------------------------*/
@@ -466,455 +613,12 @@ section h2 span {
 }
 #formWrap .formTable a {
   padding: 2px 8px;
-  background: red;
+  background:red;
   color: white;
-  border-radius: 5px;
+  border-radius: 5px; 
 }
-/*------------------------------------------------------------
-   Section別表示タイプ01h
-------------------------------------------------------------*/
-.body_type01h {
-  border-top: solid #0B86EB;
-  border-top-width: 5px;
-  padding: 5% 0% 5% 0%;
-  margin: 5% 0px 0px 0px;
-}
-.body_type01h img {
-  padding: 0% 0%;
-}
-.body_type01h h2 {
-  text-shadow: 2px 3px 4px #808080;
-  font-size: 165%;
-  text-align: center;
-  padding: 0% 0% 2% 0%;
-}
-.body_type01h h3 {
-  text-shadow: 2px 3px 4px #808080;
-  font-size: 140%;
-  text-align: center;
-}
-.body_type01h p {
-  font-size: 110%;
-  text-align: left;
-}
-/*------------------------------------------------------------
-   Section別表示タイプ01n
-------------------------------------------------------------*/
-.body_type01n {
-  padding: 5% 0% 5% 0%;
-  margin: 5% 0px 0px 0px;
-}
-.body_type01n img {
-  padding: 0% 0%;
-}
-.body_type01n h2 {
-  text-shadow: 2px 3px 4px #808080;
-  font-size: 165%;
-  text-align: center;
-  padding: 0% 0% 2% 0%;
-}
-.body_type01n h3 {
-  text-shadow: 2px 3px 4px #808080;
-  font-size: 140%;
-  text-align: center;
-}
-.body_type01n p {
-  font-size: 110%;
-  text-align: left;
-}
-/*------------------------------------------------------------
-   Section別表示タイプ01
-------------------------------------------------------------*/
-.body_type01 {
-  border-top: solid #0B86EB;
-  border-top-width: 1px;
-  padding: 5% 0% 5% 0%;
-  margin: 5% 0px 0px 0px;
-}
-.body_type01 img {
-  padding: 0% 0%;
-}
-.body_type01 h2 {
-  text-shadow: 2px 3px 4px #808080;
-  font-size: 165%;
-  text-align: center;
-  padding: 0% 0% 2% 0%;
-}
-.body_type01 h3 {
-  text-shadow: 2px 3px 4px #808080;
-  font-size: 140%;
-  text-align: center;
-}
-.body_type01 p {
-  font-size: 110%;
-  text-align: left;
-}
-/* ロゴ用設定 */
-.innerS_Comm_logo {
-  padding: 7% 0%;
-  text-align: center;
-}
-.innerS_Comm_logo img {
-  width: 60%;
-}
-.innerS_Comm_introduction, .innerS_Comm_introduction1, .innerS_Comm_introduction2, .innerS_Comm_introduction3 {
-  color: #2486ca;
-  font-size: 95%;
-  width: 95%;
-  margin: 0 auto;
-}
-.innerS_Comm_introduction1 p {
-  text-align: center;
-}
-.innerS_Comm_introduction2 {
-  padding: 0 0 7% 0;
-}
-.innerS_Comm_introduction3 {
-  padding: 0 0 3% 0;
-}
-.innerS_Comm_details, .innerS_Comm_details2 {
-  padding: 3% 0 0;
-  font-size: 82%;
-  width: 90%;
-  margin: 0 auto;
-}
-.innerS_Comm_details3 {
-  padding: 3% 0 0;
-}
-.innerS_Comm_details2 p {
-  text-align: center;
-}
-.innerS_Comm_details3 p {
-  font-size: 90%;
-  padding: 0% 12%;
-}
-.innerS_Comm_details4 p {
-  font-style: 2%;
-  padding: 2% 12% 0;
-}
-.innerS_Comm_details4 .textlarge {
-  font-size: 120%;
-  font-weight: bold;
-}
-.innerS_Comm_details4 .liCheck {
-  color: red;
-}
-.innerS_Comm_details4 li {
-  padding: 0% 18%;
-  text-align: left;
-}
-.innerS_Comm_link {
-  text-align: right;
-  padding: 3% 5% 0%;
-}
-.innerS_Comm_link a {
-  text-decoration: none;
-  font-size: 105%;
-  padding: 2px 8px;
-  background: #D827F0;
-  color: white;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-}
-.innerS_Comm_box {
-  font-size: 80%;
-  margin: 40px auto;
-  padding: 1% 0 1% 4%;
-  width: 80%;
-  border-radius: 10px;
-  border: 3px solid #2486ca;
-}
-.innerS_Comm_Infobox {
-  position: relative;
-  margin: 2em 0;
-  padding: 0.5em 1em;
-  border: solid 3px #62c1ce;
-}
-.innerS_Comm_Infobox .box-title {
-  position: absolute;
-  display: inline-block;
-  top: -27px;
-  left: -3px;
-  padding: 0 9px;
-  height: 25px;
-  line-height: 25px;
-  font-size: 17px;
-  background: #62c1ce;
-  color: #ffffff;
-  font-weight: bold;
-  border-radius: 5px 5px 0 0;
-}
-.innerS_Comm_Infobox p {
-  margin: 0;
-  padding: 0;
-}
-.pcr_flow_t {
-  margin: 0px 15%;
-}
-.pcr_flow_tt {
-  text-align: center;
-}
-.pcr_flow_yy {
-  width: 100%;		/* IE Tableバグ対応 */
-}
-.pcr_flow_ywj {
-  width: 20%;
-}
-.pcr_flow_ywy {
-  width: 3%;
-}
-/* 並び設定 */
-.innerS_rps01 {
-  display: table; /* ブロックレベル要素をtableと同じように表示にする */
-}
-.innerS_rps01_elm {
-  display: table-cell;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0% 0% 5% 0%;
-}
-.innerS_rps01_elm img {
-  max-width: 100%;
-  max-height: 100%;
-  width: 80%;
-  height: auto;
-}
-.innerS_rps01_elm p {
-  text-align: center;
-}
-/*------------------------------------------------------------
-   お知らせ
-------------------------------------------------------------*/
-.innerS_Information {
-  padding: 3% 5% 0;
-}
-.innerS_Information p {
-  font-size: 95%;
-  font-weight: bold;
-  text-align: center;
-}
-.tbl-i01 {
-  border: "1";
-  style: "border-collapse: collapse";
-  width: 100%;
-}
-.td_i01 {
-  background-color: #e2f1ff;
-  color: black;
-  text-align: Left;
-}
-.td_i02 {
-  background-color: #f9feff;
-  color: black;
-  text-align: Left;
-}
-.dti01 {
-  width: 36%;
-}
-.dti02 {
-  width: 64%;
-}
-/*------------------------------------------------------------
-   個人情報の扱い
-------------------------------------------------------------*/
-#privacy {
-  padding: 1% 1%; /*(修正)上下、左右へのボックス内の余白*/
-  margin: 0 auto;
-  color: #555;
-  line-height: 120%;
-}
-#privacy h3 {
-  text-shadow: 2px 3px 4px #808080;
-  font-size: 140%;
-  padding: 1%;
-  border-bottom: 1px solid #000000;
-}
-#privacy p {
-  text-shadow: none;
-  font-size: 90%;
-  padding: 1% 1%;
-}
-#privacy dl {
-  text-shadow: 1px 1px 1px #808080;
-  font-size: 90%;
-  padding: 1% 1%;
-}
-#privacy dd {
-  text-shadow: none;
-  font-size: 95%;
-  padding: 0% 2% 1%;
-}
-#privacy .dd_a {
-  padding: 1% 0% 1% 1%;
-}
-#privacy #pre01 {
-  text-shadow: none;
-  font-size: 90%;
-  padding: 1% 2% 1%;
-}
-#privacy #pre02 {
-  text-shadow: none;
-  font-size: 90%;
-  padding: 1% 2% 1%;
-  text-align: right;
-}
-#privacy li {
-  list-style-type: disc;
-  text-shadow: none;
-  font-size: 82%;
-  padding: 0% 0% 2px;
-  margin-left: 5%;
-}
-#privacy #pr_p {
-  width: auto;
-}
-#privacy #pr_td01 {
-  width: 100%;
-  text-align: right;
-}
-#privacy #pr_td02 {
-  width: 40%;
-}
-#privacy img {
-  width: auto;
-  height: 60%;
-}
-/*------------------------------------------------------------
-  [アクセスマップ設定]
-------------------------------------------------------------*/
-.tbl-a01 {
-  border: "0";
-  style: "border-collapse: collapse";
-  width: 100%;
-}
-.td-a01 {
-  width: 100%;
-}
-.td-a01 iframe {
-  width: 100%;
-  height: 450px;
-  frameborder: 1;
-  border: 0;
-}
-.td-a02gr, .td-a02ug {
-  padding: 1% 3%;
-  width: 100px;/*50%;*/
-}
-.td-a02gr p, .td-a02ug p {
-  text-align: center;
-}
-.a_taga01u {
-  font-size: 90%;
-}
-.a_taga01d {
-  font-size: 80%;
-}
-/*------------------------------------------------------------
-  [アコーディオン設定]
-------------------------------------------------------------*/
-.menu__item {
-  background: #2486ca;
-  color: black;
-  cursor: pointer;
-  display: block;
-  margin-bottom: 1px;
-}
-.menu__item__link {
-  color: white;
-  font-weight: bold;
-  display: block;
-  line-height: 60px;
-  padding: 0 1rem;
-  position: relative;
-  text-decoration: none;
-}
-.menu__item__link:after {
-  background: #2486ca;
-  content: '\f067';
-  display: block;
-  font-family: "Font Awesome 5 Free";
-  line-height: 60px;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 60px;
-}
-.menu__item__link.on:after {
-  content: '\f068';
-}
-.submenu {
-  background: #fff;
-  display: none;
-}
-.submenu__item {
-  border-bottom: 1px solid #5200b7;
-  color: #222;
-  padding: 1rem;
-}
-.tbl-r05 {
-  border: "1";
-  style: "border-collapse: collapse";
-  width: 100%;
-}
-.tbl-r05 .thead {
-  display: none;
-}
-.tbl-r05 tr {
-  text-align: left;
-  width: 100%;
-}
-.tbl-r05 td {
-  text-align: left;
-  display: block;
-  width: 100%;
-}
-.tbl-r05 td:first-child {
-  background: #e9727e;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-}
-.tbl-r05 td:before {
-  content: attr(data-label);
-  float: left;
-  font-weight: bold;
-  margin-right: 10px;
-}
-.tbl-r01 {
-  border: "1";
-  style: "border-collapse: collapse";
-  width: 100%;
-}
-.td_g00 {
-  background: #e9727e;
-  color: black;
-  border: "1";
-  style: "border-collapse: collapse";
-}
-.dtd01 {
-  width: 25%;
-}
-.dtd02 {
-  width: 75%;
-}
-.td_g00g {
-  background-color: white;
-  font-weight: bold;
-}
-.td_g01 {
-  background-color: #f9feff;
-  color: black;
-  font-weight: bold;
-  text-align: Left;
-}
-.td_g02 {
-  background-color: #e2f1ff;
-  color: black;
-  font-weight: bold;
-  text-align: Left;
-}
+
+
 /*===========================================================
    レスポンシブ設定
 ===========================================================*/
@@ -922,7 +626,7 @@ section h2 span {
    画面サイズ 幅:800px以上
 ------------------------------------------------------------*/
 @media only screen and (min-width: 800px) {
-  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable, .body_secClass03, .body_type02, .td-a02gr, .td-a02ug {
+  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable {
     font-size: 20px;
   }
   .pcr_flow801 {
@@ -940,47 +644,18 @@ section h2 span {
   .pcr_flow800f {
     display: none;
   }
-  #divlang img {
-    height: 25px;
-    width: auto;
-  }
-  /* 並び設定 */
+
+  /* 検査キット集配方法 */
   .innerS_rps01 {
-    display: table; /* ブロックレベル要素をtableと同じように表示にする */
+    display: table; 
   }
   .innerS_rps01_elm {
     display: table-cell;
     margin: 0 auto;
     text-align: center;
-    padding: 0% 0% 5% 0%;
+    padding: 0% 0% 3% 0%;
   }
-  a#menu {
-    display: none;
-  }
-  .panel {
-    display: block !important;
-  }
-  #mainnav li {
-    display: inline-block;
-    padding: 50px 25px;
-    font-size: 15px;
-  }
-  /* SEC03 PROJECT
-	-----------------*/
-  .col3 {
-    text-align: center;
-  }
-  .col3 li {
-    display: inline-block;
-    width: 28%;
-    padding: 0 2.5% 50px;
-    margin-bottom: 0;
-    vertical-align: top;
-    text-align: left;
-  }
-  #footer {
-    padding: 30px 10px 70px 0;
-  }
+	
   #formWrap .formTable {
     width: 100%;
     margin: 0 auto;
@@ -996,28 +671,22 @@ section h2 span {
     background: #efefef;
     text-align: left;
   }
-}
-/*------------------------------------------------------------
-   画面サイズ 幅:641px以上
-------------------------------------------------------------*/
-@media only screen and (min-width: 641px) {
-  .col2 li {
-    width: 60%;
-    vertical-align: top;
-  }
-  .col2 li:first-child {
-    width: 35%;
-    padding-right: 4%;
+	
+  #footer {
+    padding: 30px 10px 70px 0;
   }
 }
+
 /*------------------------------------------------------------
    画面サイズ 幅:799px以下
 ------------------------------------------------------------*/
 @media only screen and (max-width: 799px) {
-  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable, .body_secClass03, .body_type02, .td-a02gr, .td-a02ug {
+  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable {
     font-size: 16px;
   }
-  .pcr_flow801 {
+  .body_type01 h2 {
+    font-size: 140%;
+  }  .pcr_flow801 {
     display: none;
   }
   .pcr_flow800 {
@@ -1032,48 +701,64 @@ section h2 span {
   .pcr_flow800f {
     display: block;
   }
-  #divlang img {
-    height: 20px;
-    width: auto;
-  }
+
+  /* 検査キット集配方法 */
   .innerS_rps01 {
-    display: block; /* ブロックレベル要素をtableと同じように表示にする */
+    display: block;
   }
   .innerS_rps01_elm {
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding: 0% 0% 5% 0%;
+    padding: 0% 0% 3% 0%;
   }
   #header {
     position: fixed;
-    width: 100%;
+  /*  width: 100%;*/
     z-index: 500;
   }
-  #TopImg {}
-  .col3 li {
-    margin: 50px auto 0 auto;
-    display: block;
+
+  .div-flex01, .div-flex02, .div-flex04, .div-flex05 {
+    flex-direction: column;
+    /*width: 100%;*/
   }
-  section {
-    padding-top: 0px;
+  .div-flex01 .item-image, .div-flex02 .item-image, .div-flex04 .item-image  {
+    /*width: 100%;*/
+    margin-bottom: 0;
   }
-  section h2 {
-    text-shadow: 1px 2px 3px #808080;
-    margin: 0 auto 20px;
+  .div-flex01:nth-child(odd), .div-flex02:nth-child(odd) {
+    flex-direction: column;
   }
-  section h2 span {
-    text-shadow: 1px 2px 3px #808080;
-    padding: 0 0px;
+  .div-flex01 .item-text, .div-flex02 .item-text, .div-flex04 .item-text{
+    align-items: center;
   }
-  #faqform {
-    padding: 0px; /*余白*/
+  .div-flex04 .item-text {
+    text-align: center;
   }
-  /*"Q"と"A"マーク*/
-  #faqform dt::before, #faqform dd::before {
-    width: 20px; /*幅*/
-    line-height: 20px; /*高さ*/
+  .div-flex03 .item-box {
+    width: 120px;
+    height: 60px;  line-height: 60px;
   }
+  .div-flex04 {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	padding: 2% 3%;
+  }
+  .div-flex04 .item-text {
+    padding: 0% 10% 0% 0%;
+  }
+  .div-flex04 .item-box {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .div-flex05 .item-image {
+    max-width: 100%;
+    height: auto;
+  }
+
   #formWrap {
     width: 95%;
     margin: 0 auto;
@@ -1097,30 +782,19 @@ section h2 span {
     width: 100%;
     height: 40px;
   }
+	
 }
 /*------------------------------------------------------------
    画面サイズ 幅:460px以下
 ------------------------------------------------------------*/
 @media only screen and (max-width: 506px) {
-  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable, .body_secClass03, .body_type02, .td-a02gr, .td-a02ug {
+  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, .formTable {
     font-size: 16px;
   }
-  .body_type01 h3 {
-    font-size: 100%;
+  .body_type01 h2 {
+    font-size: 120%;
   }
-  .innerS_Comm_details3 p {
-    font-size: 95%;
-    padding: 0% 5%;
-  }
-  .innerS_rps01 {
-    display: block; /* ブロックレベル要素をtableと同じように表示にする */
-  }
-  .innerS_rps01_elm {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0% 0% 5% 0%;
-  }
+
   .pcr_flow460 {
     display: none;
   }
@@ -1130,13 +804,19 @@ section h2 span {
   .pcr_flow800f {
     display: block;
   }
-  .dtd01 {
-    width: 36%;
+
+  /* 検査キット集配方法 */
+  .innerS_rps01 {
+    display: block;
   }
-  .dtd02 {
-    width: 64%;
+  .innerS_rps01_elm {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0% 0% 3% 0%;
   }
 }
+
 /* Topに戻るボタン */
 #btn_page_top801 {
   width: 110px;

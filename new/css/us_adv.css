@@ -1,0 +1,50 @@
+#us_adv_wrap {
+    background-color: black;
+    color: white;
+}
+
+.us_adv_box {
+    color: #E0E2E0;
+    border-top: 1px solid white;
+    margin-bottom: 50px;
+}
+
+.us_adv_num {
+    font-family: 'Uchen', serif;
+    font-size: 120px;
+    margin-bottom: 20px;
+}
+
+.us_adv_title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.us_adv_info {
+    font-size: 15px;
+    margin: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .us_adv_num {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+
+    .us_adv_title {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .us_adv_info {
+        font-size: 11px;
+    }
+
+    .us_adv_box {
+        margin-bottom: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
