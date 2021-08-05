@@ -1,0 +1,55 @@
+#nsc_map_wrap {
+    background-color: black;
+    color: white;
+
+}
+
+#map_title,
+#map_title_sub {
+    margin: 0px;
+    font-weight: bold;
+}
+
+#map_title {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#map_title_sub {
+    font-size: 25px;
+}
+
+#map_ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.map_li {
+    margin-bottom: 7px;
+    font-size: 20px;
+    text-align: right;
+}
+
+#nsc_map_iframe{
+    margin: 0px;
+    padding: 0px;
+    border: 5px solid #414c4a;
+    height: 250px;
+}
+
+@media (max-width: 768px) {
+    #map_title {
+        font-size: 20px;
+    }
+
+    #map_title_sub {
+        font-size: 20px;
+    }
+
+    .map_li {
+        font-size: 15px;
+        text-align: left;
+    }
+}
