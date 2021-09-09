@@ -40,7 +40,11 @@
 }
 
 @media (max-width: 768px) {
-    #map_title,#map_title_sub {
+    #map_title {
+        font-size: 25px;
+    }
+    
+    #map_title_sub {
         font-size: 30px;
     }
 
