@@ -1,0 +1,50 @@
+.snsList {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.snsList li {
+    margin: auto;
+    display: inline-block;
+    padding: 5px 0px 5px 0px;
+}
+
+.snsList a {
+    color: white;
+    margin: 0px 10px 0px 10px;
+    font-size: 30px;
+}
+
+.ad_section {
+    text-align: center;
+}
+
+#footer_ad {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+#center_ad {
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    display: none;
+}
+
+#close {
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+}
